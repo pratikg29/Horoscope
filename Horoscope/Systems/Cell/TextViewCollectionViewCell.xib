@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TextViewCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="335" height="500"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="335" height="500"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gtc-Yr-oQC">
+                        <rect key="frame" x="10" y="10" width="315" height="480"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4GQ-s1-N9C">
+                                <rect key="frame" x="10" y="10" width="295" height="460"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4GQ-s1-N9C" firstAttribute="top" secondItem="gtc-Yr-oQC" secondAttribute="top" constant="10" id="U9S-YG-AB8"/>
+                            <constraint firstAttribute="bottom" secondItem="4GQ-s1-N9C" secondAttribute="bottom" constant="10" id="k9H-oY-Phj"/>
+                            <constraint firstItem="4GQ-s1-N9C" firstAttribute="leading" secondItem="gtc-Yr-oQC" secondAttribute="leading" constant="10" id="sTD-dF-utO"/>
+                            <constraint firstAttribute="trailing" secondItem="4GQ-s1-N9C" secondAttribute="trailing" constant="10" id="spK-gj-dvv"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="gtc-Yr-oQC" secondAttribute="trailing" constant="10" id="HCb-Ov-X4P"/>
+                <constraint firstItem="gtc-Yr-oQC" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="Hxm-v0-eNc"/>
+                <constraint firstAttribute="bottom" secondItem="gtc-Yr-oQC" secondAttribute="bottom" constant="10" id="f8Z-Mj-Dp1"/>
+                <constraint firstItem="gtc-Yr-oQC" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="ird-Ok-cr0"/>
+            </constraints>
+            <connections>
+                <outlet property="BackView" destination="gtc-Yr-oQC" id="mWV-v2-rtf"/>
+                <outlet property="txtView" destination="4GQ-s1-N9C" id="6bg-wZ-cKT"/>
+            </connections>
+            <point key="canvasLocation" x="25.5" y="52"/>
+        </collectionViewCell>
+    </objects>
+</document>
