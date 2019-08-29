@@ -1,12 +1,20 @@
 PODS:
+  - FSPagerView (0.8.3)
   - Google-Mobile-Ads-SDK (7.28.0)
 
 DEPENDENCIES:
+  - FSPagerView
   - Google-Mobile-Ads-SDK
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - FSPagerView
+    - Google-Mobile-Ads-SDK
+
 SPEC CHECKSUMS:
+  FSPagerView: 670405b2f18e2a87fa37f20b00de783e562c25a8
   Google-Mobile-Ads-SDK: 7f9bc0011df363ae5616449de3682a14c4701612
 
-PODFILE CHECKSUM: eec397a97f5bad6221a87a747ad1bea115501c3e
+PODFILE CHECKSUM: 34551d73659dc428c036b1b8e59e1c1bb9206c5b
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.7.5

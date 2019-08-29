@@ -11,6 +11,7 @@
 #import "PageMenuViewController.h"
 
 
+
 @interface ViewController ()
 {
     NSMutableArray *alertArray;
@@ -27,6 +28,7 @@
     [self setupSidemenu];
     [self getAdsID];
     [self ShowAlertDialog];
+    
     // Do any additional setup after loading the view.
 }
 
@@ -38,6 +40,12 @@
     
     [self.lblTitle initWithAppPropertiesSize:kDefaultFontSizeExtraLarge20 Type:DFONTMEDIUM];
     [self.lblTitle initWithAppPropertiesColorWhite];
+    [self.pagerView registerClass:[FSPagerViewCell class] forCellWithReuseIdentifier:@"cell"];
+    self.pagerView.isInfinite = YES;
+    self.pagerView.transformer = [[FSPagerViewTransformer alloc] initWithType:FSPagerViewTransformerTypeCoverFlow];
+    self.pagerView.itemSize = CGSizeMake(250, 250);
+    self.pagerView.decelerationDistance = FSPagerViewAutomaticDistance;
+    [self.pagerView setBackgroundColor:[UIColor clearColor]];
 }
 
 -(void)getAdsID
@@ -226,5 +234,34 @@
     vc.strHoroTitle = [self.array_title objectAtIndex:indexPath.row];
     [self.navigationController pushViewController:vc animated:YES];
 }
+
+#pragma mark - FSPagerViewDataSource
+
+- (NSInteger)numberOfItemsInPagerView:(FSPagerView *)pagerView
+{
+    return self.array_data.count;
+}
+
+- (FSPagerViewCell *)pagerView:(FSPagerView *)pagerView cellForItemAtIndex:(NSInteger)index
+{
+    FSPagerViewCell * cell = [pagerView dequeueReusableCellWithReuseIdentifier:@"cell" atIndex:index];
+    cell.imageView.image = [UIImage imageNamed:self.array_data[index]];
+    cell.imageView.contentMode = UIViewContentModeScaleAspectFill;
+    cell.imageView.clipsToBounds = YES;
+    cell.contentView.layer.shadowColor = [UIColor blackColor].CGColor;
+    cell.contentView.layer.shadowRadius = 10;
+    cell.contentView.layer.shadowOpacity = 0.7;
+    return cell;
+}
+
+#pragma mark - FSPagerViewDelegate
+
+- (void)pagerView:(FSPagerView *)pagerView didSelectItemAtIndex:(NSInteger)index
+{
+    [pagerView deselectItemAtIndex:index animated:YES];
+    [pagerView scrollToItemAtIndex:index animated:YES];
+}
+
+
 
 @end

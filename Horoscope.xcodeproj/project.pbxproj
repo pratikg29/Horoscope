@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3038D42423129599004AF5E7 /* hello.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3038D42323129599004AF5E7 /* hello.swift */; };
+		3038D43223129D77004AF5E7 /* FSPagerViewLayoutAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3038D42A23129D76004AF5E7 /* FSPagerViewLayoutAttributes.swift */; };
+		3038D43323129D77004AF5E7 /* FSPagerCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3038D42B23129D76004AF5E7 /* FSPagerCollectionView.swift */; };
+		3038D43423129D77004AF5E7 /* FSPageViewTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3038D42C23129D76004AF5E7 /* FSPageViewTransformer.swift */; };
+		3038D43523129D77004AF5E7 /* FSPagerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3038D42D23129D76004AF5E7 /* FSPagerViewCell.swift */; };
+		3038D43623129D77004AF5E7 /* FSPagerViewObjcCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = 3038D42E23129D76004AF5E7 /* FSPagerViewObjcCompat.m */; };
+		3038D43723129D77004AF5E7 /* FSPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3038D42F23129D76004AF5E7 /* FSPageControl.swift */; };
+		3038D43823129D77004AF5E7 /* FSPageViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3038D43023129D76004AF5E7 /* FSPageViewLayout.swift */; };
+		3038D43923129D77004AF5E7 /* FSPagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3038D43123129D76004AF5E7 /* FSPagerView.swift */; };
 		4D106D7821535F7C0097823D /* TextViewCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D106D7621535F7C0097823D /* TextViewCollectionViewCell.m */; };
 		4D106D7921535F7C0097823D /* TextViewCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D106D7721535F7C0097823D /* TextViewCollectionViewCell.xib */; };
 		4D106D81215396DA0097823D /* MainCollectionViewCelliPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D106D80215396DA0097823D /* MainCollectionViewCelliPad.xib */; };
@@ -248,6 +257,18 @@
 
 /* Begin PBXFileReference section */
 		2A110858C608B4E226A54F5B /* Pods-Horoscope.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Horoscope.release.xcconfig"; path = "Pods/Target Support Files/Pods-Horoscope/Pods-Horoscope.release.xcconfig"; sourceTree = "<group>"; };
+		3038D42223129598004AF5E7 /* Horoscope-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Horoscope-Bridging-Header.h"; sourceTree = "<group>"; };
+		3038D42323129599004AF5E7 /* hello.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hello.swift; sourceTree = "<group>"; };
+		3038D42923129D76004AF5E7 /* FSPagerViewObjcCompat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSPagerViewObjcCompat.h; sourceTree = "<group>"; };
+		3038D42A23129D76004AF5E7 /* FSPagerViewLayoutAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSPagerViewLayoutAttributes.swift; sourceTree = "<group>"; };
+		3038D42B23129D76004AF5E7 /* FSPagerCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSPagerCollectionView.swift; sourceTree = "<group>"; };
+		3038D42C23129D76004AF5E7 /* FSPageViewTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSPageViewTransformer.swift; sourceTree = "<group>"; };
+		3038D42D23129D76004AF5E7 /* FSPagerViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSPagerViewCell.swift; sourceTree = "<group>"; };
+		3038D42E23129D76004AF5E7 /* FSPagerViewObjcCompat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSPagerViewObjcCompat.m; sourceTree = "<group>"; };
+		3038D42F23129D76004AF5E7 /* FSPageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSPageControl.swift; sourceTree = "<group>"; };
+		3038D43023129D76004AF5E7 /* FSPageViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSPageViewLayout.swift; sourceTree = "<group>"; };
+		3038D43123129D76004AF5E7 /* FSPagerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSPagerView.swift; sourceTree = "<group>"; };
+		3056392923183131004E6A6E /* tempJson.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = tempJson.geojson; sourceTree = "<group>"; };
 		4D106D7521535F7C0097823D /* TextViewCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextViewCollectionViewCell.h; sourceTree = "<group>"; };
 		4D106D7621535F7C0097823D /* TextViewCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextViewCollectionViewCell.m; sourceTree = "<group>"; };
 		4D106D7721535F7C0097823D /* TextViewCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextViewCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -688,6 +709,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3038D42823129D5B004AF5E7 /* Pager Source */ = {
+			isa = PBXGroup;
+			children = (
+				3038D42F23129D76004AF5E7 /* FSPageControl.swift */,
+				3038D42B23129D76004AF5E7 /* FSPagerCollectionView.swift */,
+				3038D43123129D76004AF5E7 /* FSPagerView.swift */,
+				3038D42D23129D76004AF5E7 /* FSPagerViewCell.swift */,
+				3038D42A23129D76004AF5E7 /* FSPagerViewLayoutAttributes.swift */,
+				3038D42923129D76004AF5E7 /* FSPagerViewObjcCompat.h */,
+				3038D42E23129D76004AF5E7 /* FSPagerViewObjcCompat.m */,
+				3038D43023129D76004AF5E7 /* FSPageViewLayout.swift */,
+				3038D42C23129D76004AF5E7 /* FSPageViewTransformer.swift */,
+			);
+			path = "Pager Source";
+			sourceTree = "<group>";
+		};
 		4AFB8767187B570F65CFD792 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -732,7 +769,10 @@
 				4DED7DCC21522A1F000C6319 /* Info.plist */,
 				4DED7DCD21522A1F000C6319 /* main.m */,
 				4DF0F53021E66ED5009FCFB0 /* ic_logo.png */,
+				3038D42323129599004AF5E7 /* hello.swift */,
 				4DED7DC421522A1F000C6319 /* Horoscope.xcdatamodeld */,
+				3038D42223129598004AF5E7 /* Horoscope-Bridging-Header.h */,
+				3056392923183131004E6A6E /* tempJson.geojson */,
 			);
 			path = Horoscope;
 			sourceTree = "<group>";
@@ -740,6 +780,7 @@
 		4DED7DD521522A9B000C6319 /* Systems */ = {
 			isa = PBXGroup;
 			children = (
+				3038D42823129D5B004AF5E7 /* Pager Source */,
 				4DED80AC21523747000C6319 /* Cell */,
 				4DED7DD621522A9B000C6319 /* AssetsData */,
 				4DED7E1021522A9B000C6319 /* CustomControls */,
@@ -1724,8 +1765,6 @@
 				4DED7DB421522A1F000C6319 /* Sources */,
 				4DED7DB521522A1F000C6319 /* Frameworks */,
 				4DED7DB621522A1F000C6319 /* Resources */,
-				0A295210EFE3B55A5A3FCB00 /* [CP] Embed Pods Frameworks */,
-				34D599698FF7D9604C0CB700 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1747,6 +1786,7 @@
 				TargetAttributes = {
 					4DED7DB721522A1F000C6319 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Manual;
 					};
 				};
@@ -1839,49 +1879,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0A295210EFE3B55A5A3FCB00 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Horoscope/Pods-Horoscope-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		34D599698FF7D9604C0CB700 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Horoscope/Pods-Horoscope-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		CF8FB1D35CCB1D95A326B5C7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Horoscope-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1916,6 +1929,7 @@
 				4DED807021522A9B000C6319 /* NSCalendarHelper.m in Sources */,
 				4DED804D21522A9B000C6319 /* AutoResizeTextView.m in Sources */,
 				4DED80C821523BF4000C6319 /* WeeklyViewController.m in Sources */,
+				3038D43523129D77004AF5E7 /* FSPagerViewCell.swift in Sources */,
 				4DED806E21522A9B000C6319 /* MDToast.m in Sources */,
 				4DED805321522A9B000C6319 /* MDCalendarDateHeader.m in Sources */,
 				4F97DF012158B3E00060E1F2 /* SingleViewViewController.m in Sources */,
@@ -1937,6 +1951,7 @@
 				4DED802021522A9B000C6319 /* NSDate+Utilities.m in Sources */,
 				4DED802D21522A9B000C6319 /* UIScrollView+BottomRefreshControl.m in Sources */,
 				4DED802421522A9B000C6319 /* AFHTTPRequestOperationManager.m in Sources */,
+				3038D42423129599004AF5E7 /* hello.swift in Sources */,
 				4DED803521522A9B000C6319 /* SFHFKeychainUtils.m in Sources */,
 				4DED7DC021522A1F000C6319 /* ViewController.m in Sources */,
 				4DED809421522A9B000C6319 /* HexColors.m in Sources */,
@@ -1946,6 +1961,7 @@
 				4DED80A921522A9B000C6319 /* TSMessageView.m in Sources */,
 				4F2E3A81215538220026E12E /* CoverView.m in Sources */,
 				4DED804F21522A9B000C6319 /* MDBubbleLabel.m in Sources */,
+				3038D43223129D77004AF5E7 /* FSPagerViewLayoutAttributes.swift in Sources */,
 				4DED803A21522A9B000C6319 /* IQNSArray+Sort.m in Sources */,
 				4DED801B21522A9B000C6319 /* NSString+DNSStringLocalised.m in Sources */,
 				4DED804821522A9B000C6319 /* LGPlusButton.m in Sources */,
@@ -1965,6 +1981,7 @@
 				4DED807C21522A9B000C6319 /* EPTextField.m in Sources */,
 				4DED802621522A9B000C6319 /* AFNetworkReachabilityManager.m in Sources */,
 				4DED800521522A9B000C6319 /* LocalisedStrings.m in Sources */,
+				3038D43923129D77004AF5E7 /* FSPagerView.swift in Sources */,
 				4DED80AA21522A9B000C6319 /* UILabel+UILabelDynamicHeight.m in Sources */,
 				4DED806721522A9B000C6319 /* MDSuggestTableView.m in Sources */,
 				4DED805821522A9B000C6319 /* MDCollectionViewCell.m in Sources */,
@@ -1981,14 +1998,17 @@
 				4DED807621522A9B000C6319 /* UIViewHelper.m in Sources */,
 				4DED807521522A9B000C6319 /* UIView+MDExtension.m in Sources */,
 				4DED806521522A9B000C6319 /* MDSnackbar.m in Sources */,
+				3038D43723129D77004AF5E7 /* FSPageControl.swift in Sources */,
 				4DED803F21522A9B000C6319 /* IQSegmentedNextPrevious.m in Sources */,
 				4DED804721522A9B000C6319 /* KLCPopup.m in Sources */,
 				4DED80A721522A9B000C6319 /* TSMessage.m in Sources */,
 				4DED804221522A9B000C6319 /* IQTitleBarButtonItem.m in Sources */,
 				4F2E3A83215538220026E12E /* SideView.m in Sources */,
+				3038D43323129D77004AF5E7 /* FSPagerCollectionView.swift in Sources */,
 				4DED803421522A9B000C6319 /* NSString+Base64.m in Sources */,
 				4DED803921522A9B000C6319 /* IQActionSheetViewController.m in Sources */,
 				4DED7FFB21522A9B000C6319 /* CSCell.m in Sources */,
+				3038D43423129D77004AF5E7 /* FSPageViewTransformer.swift in Sources */,
 				4DED808A21522A9B000C6319 /* UIImage+GIF.m in Sources */,
 				4DED802321522A9B000C6319 /* AFHTTPRequestOperation.m in Sources */,
 				4DED805F21522A9B000C6319 /* MDProgressLayer.m in Sources */,
@@ -2014,6 +2034,7 @@
 				4DED803221522A9B000C6319 /* IAPHelper.m in Sources */,
 				4DED803D21522A9B000C6319 /* IQKeyboardManager.m in Sources */,
 				4DED801621522A9B000C6319 /* THLabel+DTHLabel.m in Sources */,
+				3038D43623129D77004AF5E7 /* FSPagerViewObjcCompat.m in Sources */,
 				4DED807121522A9B000C6319 /* NSDate+MDExtension.m in Sources */,
 				4DED800A21522A9B000C6319 /* UIImage+animatedGIF.m in Sources */,
 				4DED804B21522A9B000C6319 /* LGPlusButtonsViewShared.m in Sources */,
@@ -2036,6 +2057,7 @@
 				4DED808121522A9B000C6319 /* NSData+ImageContentType.m in Sources */,
 				4DED806B21522A9B000C6319 /* MDTableViewCell.m in Sources */,
 				4DED800821522A9B000C6319 /* WebClient.m in Sources */,
+				3038D43823129D77004AF5E7 /* FSPageViewLayout.swift in Sources */,
 				4DED7DCE21522A1F000C6319 /* main.m in Sources */,
 				4DED805921522A9B000C6319 /* MDDatePicker.m in Sources */,
 				4DED80B021523758000C6319 /* MainCollectionViewCell.m in Sources */,
@@ -2210,6 +2232,7 @@
 			baseConfigurationReference = 5A6A851FD9D57BEEBB11CB33 /* Pods-Horoscope.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: pankaj bhalala (WSG6U9LNB5)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: pankaj bhalala (WSG6U9LNB5)";
 				CODE_SIGN_STYLE = Manual;
@@ -2222,6 +2245,9 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "caa6ab52-f62d-4d6e-a84e-20653e5348f0";
 				PROVISIONING_PROFILE_SPECIFIER = "Distribution - Daily Horoscope - Zodiac Sings";
+				SWIFT_OBJC_BRIDGING_HEADER = "Horoscope/Horoscope-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -2231,6 +2257,7 @@
 			baseConfigurationReference = 2A110858C608B4E226A54F5B /* Pods-Horoscope.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: pankaj bhalala (WSG6U9LNB5)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: pankaj bhalala (WSG6U9LNB5)";
 				CODE_SIGN_STYLE = Manual;
@@ -2243,6 +2270,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "caa6ab52-f62d-4d6e-a84e-20653e5348f0";
 				PROVISIONING_PROFILE_SPECIFIER = "Distribution - Daily Horoscope - Zodiac Sings";
+				SWIFT_OBJC_BRIDGING_HEADER = "Horoscope/Horoscope-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

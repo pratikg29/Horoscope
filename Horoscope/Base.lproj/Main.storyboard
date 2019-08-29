@@ -52,7 +52,7 @@
             </objects>
             <point key="canvasLocation" x="-1498" y="116"/>
         </scene>
-        <!--Horoscope-->
+        <!--Data Source-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
@@ -61,7 +61,7 @@
                         <viewControllerLayoutGuide type="bottom" id="8WJ-aj-BrA"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_bg" translatesAutoresizingMaskIntoConstraints="NO" id="PRq-bb-Tq6">
@@ -92,7 +92,7 @@
                                     <constraint firstAttribute="height" constant="64" id="u78-GM-qe8"/>
                                 </constraints>
                             </view>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="476-ol-Kec">
+                            <collectionView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="476-ol-Kec" customClass="FSPagerCollectionView" customModule="FSPagerView">
                                 <rect key="frame" x="0.0" y="72" width="375" height="497"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="l2y-Vx-hdV">
@@ -107,6 +107,17 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="cFT-bY-z2a"/>
                                 </connections>
                             </collectionView>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WQN-7W-Jby" customClass="FSPagerView" customModule="Horoscope" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="84" width="375" height="238"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="5c8-Z3-pa3"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="2pS-fR-UvR"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="myW-ol-PAe"/>
+                                </connections>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aEg-My-paW" customClass="GADBannerView">
                                 <rect key="frame" x="0.0" y="568" width="375" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -118,6 +129,7 @@
                         <color key="backgroundColor" red="0.031556717880000001" green="0.018722159790000002" blue="0.10833889989999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="KVc-7K-8Gv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="01b-ot-DNx"/>
+                            <constraint firstItem="WQN-7W-Jby" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="1Ni-9O-2bw"/>
                             <constraint firstAttribute="trailing" secondItem="KVc-7K-8Gv" secondAttribute="trailing" id="5NC-cl-XZK"/>
                             <constraint firstAttribute="trailing" secondItem="476-ol-Kec" secondAttribute="trailing" id="H24-aH-2Ov"/>
                             <constraint firstItem="476-ol-Kec" firstAttribute="top" secondItem="KVc-7K-8Gv" secondAttribute="bottom" constant="8" id="Ic7-ea-EVY"/>
@@ -126,7 +138,9 @@
                             <constraint firstAttribute="trailing" secondItem="aEg-My-paW" secondAttribute="trailing" id="V8Q-Y9-Qwo"/>
                             <constraint firstItem="aEg-My-paW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="VCS-ok-IN9"/>
                             <constraint firstItem="PRq-bb-Tq6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dAy-TC-xoJ"/>
+                            <constraint firstItem="WQN-7W-Jby" firstAttribute="top" secondItem="KVc-7K-8Gv" secondAttribute="bottom" constant="20" id="eJY-Ot-a5g"/>
                             <constraint firstItem="8WJ-aj-BrA" firstAttribute="top" secondItem="PRq-bb-Tq6" secondAttribute="bottom" constant="-50" id="f3l-rp-YCv"/>
+                            <constraint firstAttribute="trailing" secondItem="WQN-7W-Jby" secondAttribute="trailing" id="mp1-t3-0lR"/>
                             <constraint firstAttribute="trailing" secondItem="PRq-bb-Tq6" secondAttribute="trailing" id="ply-Gh-CNx"/>
                             <constraint firstItem="PRq-bb-Tq6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="roB-qN-agi"/>
                             <constraint firstItem="8WJ-aj-BrA" firstAttribute="top" secondItem="aEg-My-paW" secondAttribute="bottom" id="t9e-rK-NF1"/>
@@ -141,8 +155,9 @@
                     <connections>
                         <outlet property="HeaderView" destination="KVc-7K-8Gv" id="FAM-hg-m20"/>
                         <outlet property="bannerView" destination="aEg-My-paW" id="BAa-T2-xkb"/>
-                        <outlet property="collectionView" destination="476-ol-Kec" id="Yzx-WJ-yoZ"/>
+                        <outlet property="collectionView" destination="476-ol-Kec" id="zdv-um-KTi"/>
                         <outlet property="lblTitle" destination="Qal-wi-LSw" id="zQl-3y-9Lb"/>
+                        <outlet property="pagerView" destination="WQN-7W-Jby" id="KZF-CC-n9b"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -158,7 +173,7 @@
                         <viewControllerLayoutGuide type="bottom" id="yEk-vj-jos"/>
                     </layoutGuides>
                     <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="byc-36-vi6">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_bg" translatesAutoresizingMaskIntoConstraints="NO" id="YNH-lc-AbJ">
