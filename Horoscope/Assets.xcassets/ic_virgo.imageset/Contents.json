@@ -2,17 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "12.png",
+      "filename" : "virgo-zodiac-symbol.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "12-1.png",
+      "filename" : "virgo-zodiac-symbol-1.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "12-2.png",
+      "filename" : "virgo-zodiac-symbol-2.png",
       "scale" : "3x"
     }
   ],

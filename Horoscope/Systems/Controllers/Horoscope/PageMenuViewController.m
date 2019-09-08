@@ -13,6 +13,7 @@
 #import "WeeklyViewController.h"
 #import "MonthlyViewController.h"
 #import "YearlyViewController.h"
+#import "HoroscopeSelectionCell.h"
 
 @interface PageMenuViewController ()
 @end
@@ -21,11 +22,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self PageMenuSetup];
+    
+    listArr = [[NSMutableArray alloc] initWithObjects:@"Yesterday Horoscope", @"Today Horoscope", @"Tomorrow Horoscope", @"Weekly Horoscope", @"Monthly Horoscope", @"Yearly Horoscope", nil];
+    urlArr = [[NSMutableArray alloc] initWithObjects:API_Yersterday, API_Today, API_Tomorrow, API_Weekly, API_Monthly, API_Yearly, nil];
+    
+//    [self PageMenuSetup];
     [self initKit];
     [[GoogleAds sharedInstance] LoadAndShowFullScreenAd];
-    // Do any additional setup after loading the view.
 }
+
+- (void)viewWillAppear:(BOOL)animated {
+    [self rotatingAnimation:_img1 duration:40 from:[NSNumber numberWithFloat:0.0f] to:[NSNumber numberWithFloat: 2*M_PI]];
+    [self rotatingAnimation:_img2 duration:70 from:[NSNumber numberWithFloat: 2*M_PI] to:[NSNumber numberWithFloat:0.0f]];
+    [self rotatingAnimation:_img3 duration:60 from:[NSNumber numberWithFloat:0.0f] to:[NSNumber numberWithFloat: 2*M_PI]];
+}
+
 
 -(void)initKit
 {
@@ -35,6 +46,14 @@
     self.lblTitle.text = self.strHoroTitle;
 }
 
+- (void)rotatingAnimation: (UIImageView *)image duration: (float)duration from: (NSNumber*)From to: (NSNumber*)To {
+    CABasicAnimation* animation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
+    animation.fromValue = From;
+    animation.toValue = To;
+    animation.duration = duration;
+    animation.repeatCount = INFINITY;
+    [image.layer addAnimation:animation forKey:@"SpinAnimation"];
+}
 
 - (IBAction)Click_Back:(id)sender {
     
@@ -94,15 +113,38 @@
     
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone)
     {
-        _pageMenu = [[CAPSPageMenu alloc] initWithViewControllers:controllerArray frame:CGRectMake(0.0, 64.0, self.view.frame.size.width, self.view.frame.size.height-65) options:parameters];
+        _pageMenu = [[CAPSPageMenu alloc] initWithViewControllers:controllerArray frame:CGRectMake(0, 0, _ContainerView.frame.size.width, _ContainerView.frame.size.height) options:parameters];
+        
+//        _pageMenu = [[CAPSPageMenu alloc] initWithViewControllers:controllerArray frame:CGRectMake(0.0, 64.0, self.view.frame.size.width, self.view.frame.size.height-65) options:parameters];
     }
     else
     {
         _pageMenu = [[CAPSPageMenu alloc] initWithViewControllers:controllerArray frame:CGRectMake(0.0, 64, self.view.frame.size.width, self.view.frame.size.height - 64) options:parameters];
     }
     
-    [self.view addSubview:_pageMenu.view];
+    [self.ContainerView addSubview:_pageMenu.view];
     
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return listArr.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    HoroscopeSelectionCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+    [cell.lbl setText:listArr[indexPath.row]];
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    TodayViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"TodayViewController"];
+    controller.superViewController = self;
+    controller.strHoroName = self.strHoroName;
+    controller.strHoroTitle = listArr[indexPath.row];
+    controller.apiURL = urlArr[indexPath.row];
+//    controller.title = listArr[indexPath.row];
+    [self.navigationController pushViewController:controller animated:YES];
 }
 
 @end

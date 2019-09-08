@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		300F2EAA232584DE002E883C /* PagerViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 300F2EA9232584DE002E883C /* PagerViewCell.m */; };
 		3038D42423129599004AF5E7 /* hello.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3038D42323129599004AF5E7 /* hello.swift */; };
 		3038D43223129D77004AF5E7 /* FSPagerViewLayoutAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3038D42A23129D76004AF5E7 /* FSPagerViewLayoutAttributes.swift */; };
 		3038D43323129D77004AF5E7 /* FSPagerCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3038D42B23129D76004AF5E7 /* FSPagerCollectionView.swift */; };
@@ -16,6 +17,7 @@
 		3038D43723129D77004AF5E7 /* FSPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3038D42F23129D76004AF5E7 /* FSPageControl.swift */; };
 		3038D43823129D77004AF5E7 /* FSPageViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3038D43023129D76004AF5E7 /* FSPageViewLayout.swift */; };
 		3038D43923129D77004AF5E7 /* FSPagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3038D43123129D76004AF5E7 /* FSPagerView.swift */; };
+		30F382C423250BA700A983B6 /* HoroscopeSelectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 30F382C323250BA700A983B6 /* HoroscopeSelectionCell.m */; };
 		4D106D7821535F7C0097823D /* TextViewCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D106D7621535F7C0097823D /* TextViewCollectionViewCell.m */; };
 		4D106D7921535F7C0097823D /* TextViewCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D106D7721535F7C0097823D /* TextViewCollectionViewCell.xib */; };
 		4D106D81215396DA0097823D /* MainCollectionViewCelliPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D106D80215396DA0097823D /* MainCollectionViewCelliPad.xib */; };
@@ -257,6 +259,8 @@
 
 /* Begin PBXFileReference section */
 		2A110858C608B4E226A54F5B /* Pods-Horoscope.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Horoscope.release.xcconfig"; path = "Pods/Target Support Files/Pods-Horoscope/Pods-Horoscope.release.xcconfig"; sourceTree = "<group>"; };
+		300F2EA8232584DE002E883C /* PagerViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PagerViewCell.h; sourceTree = "<group>"; };
+		300F2EA9232584DE002E883C /* PagerViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PagerViewCell.m; sourceTree = "<group>"; };
 		3038D42223129598004AF5E7 /* Horoscope-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Horoscope-Bridging-Header.h"; sourceTree = "<group>"; };
 		3038D42323129599004AF5E7 /* hello.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hello.swift; sourceTree = "<group>"; };
 		3038D42923129D76004AF5E7 /* FSPagerViewObjcCompat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSPagerViewObjcCompat.h; sourceTree = "<group>"; };
@@ -269,6 +273,8 @@
 		3038D43023129D76004AF5E7 /* FSPageViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSPageViewLayout.swift; sourceTree = "<group>"; };
 		3038D43123129D76004AF5E7 /* FSPagerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSPagerView.swift; sourceTree = "<group>"; };
 		3056392923183131004E6A6E /* tempJson.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = tempJson.geojson; sourceTree = "<group>"; };
+		30F382C223250BA700A983B6 /* HoroscopeSelectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HoroscopeSelectionCell.h; sourceTree = "<group>"; };
+		30F382C323250BA700A983B6 /* HoroscopeSelectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HoroscopeSelectionCell.m; sourceTree = "<group>"; };
 		4D106D7521535F7C0097823D /* TextViewCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextViewCollectionViewCell.h; sourceTree = "<group>"; };
 		4D106D7621535F7C0097823D /* TextViewCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextViewCollectionViewCell.m; sourceTree = "<group>"; };
 		4D106D7721535F7C0097823D /* TextViewCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextViewCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -1656,6 +1662,8 @@
 				4D106D7521535F7C0097823D /* TextViewCollectionViewCell.h */,
 				4D106D7621535F7C0097823D /* TextViewCollectionViewCell.m */,
 				4D106D7721535F7C0097823D /* TextViewCollectionViewCell.xib */,
+				30F382C223250BA700A983B6 /* HoroscopeSelectionCell.h */,
+				30F382C323250BA700A983B6 /* HoroscopeSelectionCell.m */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -1728,6 +1736,8 @@
 				4DED80AE21523758000C6319 /* MainCollectionViewCell.m */,
 				4DED80AF21523758000C6319 /* MainCollectionViewCell.xib */,
 				4D106D80215396DA0097823D /* MainCollectionViewCelliPad.xib */,
+				300F2EA8232584DE002E883C /* PagerViewCell.h */,
+				300F2EA9232584DE002E883C /* PagerViewCell.m */,
 			);
 			path = MainCell;
 			sourceTree = "<group>";
@@ -1978,6 +1988,7 @@
 				4DED802721522A9B000C6319 /* AFSecurityPolicy.m in Sources */,
 				4DED80A521522A9B000C6319 /* ToastMessage.m in Sources */,
 				4DED800621522A9B000C6319 /* Helpers.m in Sources */,
+				30F382C423250BA700A983B6 /* HoroscopeSelectionCell.m in Sources */,
 				4DED807C21522A9B000C6319 /* EPTextField.m in Sources */,
 				4DED802621522A9B000C6319 /* AFNetworkReachabilityManager.m in Sources */,
 				4DED800521522A9B000C6319 /* LocalisedStrings.m in Sources */,
@@ -1999,6 +2010,7 @@
 				4DED807521522A9B000C6319 /* UIView+MDExtension.m in Sources */,
 				4DED806521522A9B000C6319 /* MDSnackbar.m in Sources */,
 				3038D43723129D77004AF5E7 /* FSPageControl.swift in Sources */,
+				300F2EAA232584DE002E883C /* PagerViewCell.m in Sources */,
 				4DED803F21522A9B000C6319 /* IQSegmentedNextPrevious.m in Sources */,
 				4DED804721522A9B000C6319 /* KLCPopup.m in Sources */,
 				4DED80A721522A9B000C6319 /* TSMessage.m in Sources */,
@@ -2239,9 +2251,9 @@
 				DEVELOPMENT_TEAM = WSG6U9LNB5;
 				GCC_NO_COMMON_BLOCKS = NO;
 				INFOPLIST_FILE = Horoscope/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dailyhoroscope.astrology.zodiac;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dailyhoroscope.astrology.zodiac.new;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "caa6ab52-f62d-4d6e-a84e-20653e5348f0";
 				PROVISIONING_PROFILE_SPECIFIER = "Distribution - Daily Horoscope - Zodiac Sings";
@@ -2264,9 +2276,9 @@
 				DEVELOPMENT_TEAM = WSG6U9LNB5;
 				GCC_NO_COMMON_BLOCKS = NO;
 				INFOPLIST_FILE = Horoscope/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dailyhoroscope.astrology.zodiac;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dailyhoroscope.astrology.zodiac.new;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "caa6ab52-f62d-4d6e-a84e-20653e5348f0";
 				PROVISIONING_PROFILE_SPECIFIER = "Distribution - Daily Horoscope - Zodiac Sings";

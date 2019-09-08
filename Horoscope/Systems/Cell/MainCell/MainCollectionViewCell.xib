@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -18,10 +18,39 @@
                 <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_aries" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RoB-lM-XIu">
+                    <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xch-VL-b5F">
                         <rect key="frame" x="20" y="8" width="60" height="60"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    </imageView>
+                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="cjf-Cu-y9m">
+                            <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jZa-Q4-DIT">
+                                    <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ufg-iW-3UX">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_aries" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RoB-lM-XIu">
+                                                <rect key="frame" x="5" y="5" width="128" height="128"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="RoB-lM-XIu" secondAttribute="trailing" constant="5" id="2DO-iv-wcE"/>
+                                            <constraint firstItem="RoB-lM-XIu" firstAttribute="leading" secondItem="ufg-iW-3UX" secondAttribute="leading" constant="5" id="Ag7-jb-j19"/>
+                                            <constraint firstAttribute="bottom" secondItem="RoB-lM-XIu" secondAttribute="bottom" constant="5" id="bwA-oj-7Y5"/>
+                                            <constraint firstItem="RoB-lM-XIu" firstAttribute="top" secondItem="ufg-iW-3UX" secondAttribute="top" constant="5" id="eYN-jD-RI6"/>
+                                        </constraints>
+                                    </view>
+                                    <vibrancyEffect>
+                                        <blurEffect style="extraLight"/>
+                                    </vibrancyEffect>
+                                </visualEffectView>
+                            </subviews>
+                        </view>
+                        <blurEffect style="extraLight"/>
+                    </visualEffectView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NrF-nC-Get">
                         <rect key="frame" x="4" y="74" width="92" height="21"/>
                         <constraints>
@@ -33,23 +62,25 @@
                     </label>
                 </subviews>
             </view>
-            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="RoB-lM-XIu" secondAttribute="trailing" constant="20" id="546-eP-n2N"/>
                 <constraint firstAttribute="bottom" secondItem="NrF-nC-Get" secondAttribute="bottom" constant="5" id="6Zo-mA-hiZ"/>
-                <constraint firstItem="RoB-lM-XIu" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="BAN-89-Eh6"/>
+                <constraint firstItem="NrF-nC-Get" firstAttribute="top" secondItem="xch-VL-b5F" secondAttribute="bottom" constant="6" id="6hR-pP-q78"/>
                 <constraint firstItem="NrF-nC-Get" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="4" id="BFG-PN-MaK"/>
-                <constraint firstItem="RoB-lM-XIu" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="jte-tU-VGQ"/>
+                <constraint firstItem="xch-VL-b5F" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="ZVa-nq-YAJ"/>
+                <constraint firstItem="xch-VL-b5F" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="hX9-La-g6v"/>
+                <constraint firstAttribute="trailing" secondItem="xch-VL-b5F" secondAttribute="trailing" constant="20" id="kBc-ue-F94"/>
                 <constraint firstAttribute="trailing" secondItem="NrF-nC-Get" secondAttribute="trailing" constant="4" id="lBk-8d-S06"/>
-                <constraint firstItem="NrF-nC-Get" firstAttribute="top" secondItem="RoB-lM-XIu" secondAttribute="bottom" constant="6" id="uKv-Lc-HVt"/>
             </constraints>
             <connections>
+                <outlet property="blurView" destination="xch-VL-b5F" id="LEo-Wc-ph6"/>
                 <outlet property="imgView" destination="RoB-lM-XIu" id="eyc-U5-lMV"/>
                 <outlet property="lblTitle" destination="NrF-nC-Get" id="osF-U7-N4P"/>
             </connections>
+            <point key="canvasLocation" x="132.80000000000001" y="154.72263868065968"/>
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="ic_aries" width="75" height="75"/>
+        <image name="ic_aries" width="128" height="128"/>
     </resources>
 </document>

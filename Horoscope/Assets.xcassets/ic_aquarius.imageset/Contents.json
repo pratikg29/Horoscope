@@ -2,17 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "6.png",
+      "filename" : "aquarius-water-container-symbol.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "6-1.png",
+      "filename" : "aquarius-water-container-symbol-1.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "6-2.png",
+      "filename" : "aquarius-water-container-symbol-2.png",
       "scale" : "3x"
     }
   ],

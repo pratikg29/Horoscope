@@ -2,17 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "1.png",
+      "filename" : "sagittarius-arch-and-arrow-symbol.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "1-1.png",
+      "filename" : "sagittarius-arch-and-arrow-symbol-1.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "1-2.png",
+      "filename" : "sagittarius-arch-and-arrow-symbol-2.png",
       "scale" : "3x"
     }
   ],

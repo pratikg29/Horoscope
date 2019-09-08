@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="0kS-Er-rnO">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="0kS-Er-rnO">
     <device id="ipad9_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -52,7 +52,7 @@
             </objects>
             <point key="canvasLocation" x="-1498" y="116"/>
         </scene>
-        <!--Horoscope-->
+        <!--Data Source-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
@@ -72,13 +72,13 @@
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="64"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily Horoscope" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qal-wi-LSw">
-                                        <rect key="frame" x="48" y="27" width="672" height="66"/>
+                                        <rect key="frame" x="48" y="27" width="672" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4l6-GR-41o">
-                                        <rect key="frame" x="-32" y="24" width="72" height="72"/>
+                                        <rect key="frame" x="4" y="24" width="36" height="36"/>
                                         <state key="normal" image="ic_sidemenu"/>
                                         <connections>
                                             <action selector="btnMenu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vHy-vb-Bmk"/>
@@ -96,7 +96,7 @@
                                     <constraint firstItem="Qal-wi-LSw" firstAttribute="centerX" secondItem="KVc-7K-8Gv" secondAttribute="centerX" id="wud-dc-ZYj"/>
                                 </constraints>
                             </view>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="476-ol-Kec">
+                            <collectionView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="476-ol-Kec">
                                 <rect key="frame" x="0.0" y="72" width="768" height="853"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="l2y-Vx-hdV">
@@ -111,6 +111,17 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="cFT-bY-z2a"/>
                                 </connections>
                             </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cHX-Pb-TrC" customClass="FSPagerView" customModule="Horoscope" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="337" width="768" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="Ttb-3L-C8C"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="rNi-u2-yVK"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Pl1-Dm-Xos"/>
+                                </connections>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aEg-My-paW" customClass="GADBannerView">
                                 <rect key="frame" x="0.0" y="924" width="768" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -122,7 +133,10 @@
                         <color key="backgroundColor" red="0.031556717880000001" green="0.018722159790000002" blue="0.10833889989999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="KVc-7K-8Gv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="01b-ot-DNx"/>
+                            <constraint firstItem="cHX-Pb-TrC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0nE-gP-Rlu"/>
                             <constraint firstAttribute="trailing" secondItem="KVc-7K-8Gv" secondAttribute="trailing" id="5NC-cl-XZK"/>
+                            <constraint firstItem="cHX-Pb-TrC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="9I0-rE-cer"/>
+                            <constraint firstItem="cHX-Pb-TrC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Ax7-DA-tIC"/>
                             <constraint firstAttribute="trailing" secondItem="476-ol-Kec" secondAttribute="trailing" id="H24-aH-2Ov"/>
                             <constraint firstItem="476-ol-Kec" firstAttribute="top" secondItem="KVc-7K-8Gv" secondAttribute="bottom" constant="8" id="Ic7-ea-EVY"/>
                             <constraint firstItem="476-ol-Kec" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="IgO-PN-fww"/>
@@ -135,6 +149,7 @@
                             <constraint firstItem="PRq-bb-Tq6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="roB-qN-agi"/>
                             <constraint firstItem="8WJ-aj-BrA" firstAttribute="top" secondItem="aEg-My-paW" secondAttribute="bottom" id="t9e-rK-NF1"/>
                             <constraint firstItem="aEg-My-paW" firstAttribute="top" secondItem="476-ol-Kec" secondAttribute="bottom" constant="-1" id="tbi-Mm-KEf"/>
+                            <constraint firstAttribute="trailing" secondItem="cHX-Pb-TrC" secondAttribute="trailing" id="yWg-1j-r4W"/>
                             <constraint firstItem="PRq-bb-Tq6" firstAttribute="top" secondItem="2Px-TK-Gwy" secondAttribute="bottom" constant="-20" id="zCg-G5-pKF"/>
                         </constraints>
                     </view>
@@ -147,6 +162,7 @@
                         <outlet property="bannerView" destination="aEg-My-paW" id="BAa-T2-xkb"/>
                         <outlet property="collectionView" destination="476-ol-Kec" id="Yzx-WJ-yoZ"/>
                         <outlet property="lblTitle" destination="Qal-wi-LSw" id="zQl-3y-9Lb"/>
+                        <outlet property="pagerView" destination="cHX-Pb-TrC" id="fCl-CX-mXn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -833,16 +849,16 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ic_back" width="60" height="60"/>
-        <image name="ic_bg" width="146.8800048828125" height="82.55999755859375"/>
-        <image name="ic_career" width="600" height="150"/>
-        <image name="ic_friendship" width="600" height="150"/>
-        <image name="ic_health" width="600" height="150"/>
-        <image name="ic_horoscope" width="72" height="72"/>
-        <image name="ic_lifestyle" width="600" height="150"/>
-        <image name="ic_love" width="600" height="150"/>
-        <image name="ic_personality" width="600" height="150"/>
-        <image name="ic_sidemenu" width="72" height="72"/>
-        <image name="ic_zodic" width="72" height="72"/>
+        <image name="ic_back" width="30" height="30"/>
+        <image name="ic_bg" width="306" height="172"/>
+        <image name="ic_career" width="300" height="75"/>
+        <image name="ic_friendship" width="300" height="75"/>
+        <image name="ic_health" width="300" height="75"/>
+        <image name="ic_horoscope" width="36" height="36"/>
+        <image name="ic_lifestyle" width="300" height="75"/>
+        <image name="ic_love" width="300" height="75"/>
+        <image name="ic_personality" width="300" height="75"/>
+        <image name="ic_sidemenu" width="36" height="36"/>
+        <image name="ic_zodic" width="36" height="36"/>
     </resources>
 </document>
