@@ -14,7 +14,7 @@
 #import "MonthlyViewController.h"
 #import "YearlyViewController.h"
 #import "HoroscopeSelectionCell.h"
-
+#import "OverViewViewController.h"
 @interface PageMenuViewController ()
 @end
 
@@ -22,6 +22,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    characteristicsArr = [[NSMutableArray alloc] initWithObjects:@"Personality", @"Love", @"Lifestyle", @"Career", @"Health", @"Friendship", nil];
     
     listArr = [[NSMutableArray alloc] initWithObjects:@"Yesterday Horoscope", @"Today Horoscope", @"Tomorrow Horoscope", @"Weekly Horoscope", @"Monthly Horoscope", @"Yearly Horoscope", nil];
     urlArr = [[NSMutableArray alloc] initWithObjects:API_Yersterday, API_Today, API_Tomorrow, API_Weekly, API_Monthly, API_Yearly, nil];
@@ -40,7 +42,7 @@
 
 -(void)initKit
 {
-    [self.HeaderView initWithAppPropertiesHeader];
+//    [self.HeaderView initWithAppPropertiesHeader];
     [self.lblTitle initWithAppPropertiesSize:kDefaultFontSizeExtraLarge20 Type:DFONTMEDIUM];
     [self.lblTitle initWithAppPropertiesColorWhite];
     self.lblTitle.text = self.strHoroTitle;
@@ -127,24 +129,42 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return listArr.count;
+    if (_isCharacteristics) {
+        return characteristicsArr.count;
+    }
+    else {
+        return listArr.count;
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     HoroscopeSelectionCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
-    [cell.lbl setText:listArr[indexPath.row]];
+    if (_isCharacteristics) {
+        [cell.lbl setText:characteristicsArr[indexPath.row]];
+    }
+    else {
+        [cell.lbl setText:listArr[indexPath.row]];
+    }
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    TodayViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"TodayViewController"];
-    controller.superViewController = self;
-    controller.strHoroName = self.strHoroName;
-    controller.strHoroTitle = listArr[indexPath.row];
-    controller.apiURL = urlArr[indexPath.row];
-//    controller.title = listArr[indexPath.row];
-    [self.navigationController pushViewController:controller animated:YES];
+    if (_isCharacteristics) {
+        TodayViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"TodayViewController"];
+        vc.isCharacteristics = TRUE;
+        vc.strHoroTitle = self.strHoroTitle;
+        vc.strText = [self.array_data objectAtIndex:1];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+    else {
+        TodayViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"TodayViewController"];
+        controller.superViewController = self;
+        controller.strHoroName = self.strHoroName;
+        controller.strHoroTitle = listArr[indexPath.row];
+        controller.apiURL = urlArr[indexPath.row];
+        [self.navigationController pushViewController:controller animated:YES];
+    }
 }
 
 @end

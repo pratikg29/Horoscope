@@ -10,7 +10,11 @@
 #import "init.h"
 
 @interface TodayViewController : UIViewController
-
+{
+    
+}
+@property BOOL isCharacteristics;
+@property (strong, nonatomic) NSString *strText;
 @property NSString *apiURL;
 @property (strong, nonatomic) UIViewController *superViewController;
 @property (strong, nonatomic) NSString *strHoroName;

@@ -115,7 +115,7 @@
                                     <constraint firstItem="X5f-oW-tQ0" firstAttribute="leading" secondItem="8et-Xy-g6B" secondAttribute="leading" constant="5" id="ms2-8H-Txr"/>
                                 </constraints>
                             </view>
-                            <visualEffectView opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XIt-8T-0k6">
+                            <visualEffectView hidden="YES" opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XIt-8T-0k6">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Vkf-WW-HfK">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
@@ -348,7 +348,7 @@
                                         <blurEffect style="dark"/>
                                     </visualEffectView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zodiac Characteristics" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rYe-Dn-eL2">
-                                        <rect key="frame" x="102" y="12" width="172" height="21"/>
+                                        <rect key="frame" x="101.5" y="11.5" width="172" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -519,7 +519,7 @@
                                     <constraint firstAttribute="width" secondItem="ZFf-1N-XHj" secondAttribute="height" multiplier="1:1" id="fQJ-RN-1lW"/>
                                 </constraints>
                             </imageView>
-                            <visualEffectView opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hPl-d7-sN1">
+                            <visualEffectView hidden="YES" opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hPl-d7-sN1">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="LAQ-LP-3cw">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -559,7 +559,7 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HkG-zL-xOh">
-                                <rect key="frame" x="0.0" y="84" width="375" height="583"/>
+                                <rect key="frame" x="0.0" y="84" width="375" height="533"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -624,6 +624,24 @@
                                     <outlet property="delegate" destination="0lt-aH-eyC" id="1R0-P8-PL1"/>
                                 </connections>
                             </tableView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dGX-bs-RDx">
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="F2W-qF-tJf">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="uUc-fe-WYN"/>
+                                </constraints>
+                                <blurEffect style="dark"/>
+                            </visualEffectView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3bd-sh-ewP" customClass="GADBannerView">
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ZXB-zS-jhQ"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.031372549019607843" green="0.019607843137254902" blue="0.10980392156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -632,12 +650,19 @@
                             <constraint firstItem="wuD-TU-kuP" firstAttribute="leading" secondItem="ZFf-1N-XHj" secondAttribute="centerX" constant="-50" id="96P-d9-0pc"/>
                             <constraint firstItem="ZDz-zP-tJf" firstAttribute="top" secondItem="d5H-kR-AAL" secondAttribute="bottom" id="9af-sF-Brk"/>
                             <constraint firstAttribute="bottom" secondItem="BRl-Ic-HTw" secondAttribute="bottom" id="CsV-yO-WCP"/>
+                            <constraint firstItem="dGX-bs-RDx" firstAttribute="top" secondItem="3bd-sh-ewP" secondAttribute="top" id="Cx2-zo-sVU"/>
                             <constraint firstItem="wuD-TU-kuP" firstAttribute="trailing" secondItem="fvr-nF-qJf" secondAttribute="trailing" id="DXX-Ja-vbm"/>
+                            <constraint firstItem="wuD-TU-kuP" firstAttribute="trailing" secondItem="dGX-bs-RDx" secondAttribute="trailing" id="FEX-Rd-8dz"/>
                             <constraint firstItem="HkG-zL-xOh" firstAttribute="top" secondItem="d5H-kR-AAL" secondAttribute="bottom" id="G9E-Y1-Cc8"/>
+                            <constraint firstItem="3bd-sh-ewP" firstAttribute="leading" secondItem="wuD-TU-kuP" secondAttribute="leading" id="J4z-s4-bm7"/>
+                            <constraint firstItem="wuD-TU-kuP" firstAttribute="bottom" secondItem="3bd-sh-ewP" secondAttribute="bottom" id="K1o-9T-iUA"/>
                             <constraint firstItem="wuD-TU-kuP" firstAttribute="bottom" secondItem="fvr-nF-qJf" secondAttribute="bottom" id="KkA-UL-ebt"/>
                             <constraint firstItem="sxb-c7-PFT" firstAttribute="centerX" secondItem="wuD-TU-kuP" secondAttribute="trailing" id="OZu-rf-pZU"/>
-                            <constraint firstItem="fvr-nF-qJf" firstAttribute="top" secondItem="HkG-zL-xOh" secondAttribute="bottom" id="Rzg-8n-TLh"/>
+                            <constraint firstItem="3bd-sh-ewP" firstAttribute="bottom" secondItem="dGX-bs-RDx" secondAttribute="bottom" id="OsD-Pg-lD4"/>
+                            <constraint firstItem="dGX-bs-RDx" firstAttribute="leading" secondItem="wuD-TU-kuP" secondAttribute="leading" id="RsF-zz-EQQ"/>
+                            <constraint firstItem="3bd-sh-ewP" firstAttribute="top" secondItem="HkG-zL-xOh" secondAttribute="bottom" id="Rzg-8n-TLh"/>
                             <constraint firstItem="hPl-d7-sN1" firstAttribute="leading" secondItem="wuD-TU-kuP" secondAttribute="leading" id="TuZ-zd-Qcb"/>
+                            <constraint firstItem="3bd-sh-ewP" firstAttribute="trailing" secondItem="wuD-TU-kuP" secondAttribute="trailing" id="VtW-7o-fs6"/>
                             <constraint firstItem="sxb-c7-PFT" firstAttribute="width" secondItem="BRl-Ic-HTw" secondAttribute="width" multiplier="400/375" id="W9Q-ry-T1m"/>
                             <constraint firstItem="wuD-TU-kuP" firstAttribute="trailing" secondItem="HkG-zL-xOh" secondAttribute="trailing" id="WSW-3S-RdI"/>
                             <constraint firstItem="fvr-nF-qJf" firstAttribute="leading" secondItem="wuD-TU-kuP" secondAttribute="leading" id="WSZ-Mv-duB"/>
@@ -772,7 +797,7 @@
                                     <constraint firstAttribute="bottom" secondItem="KUV-gR-yNL" secondAttribute="centerY" constant="67" id="tng-OG-fbR"/>
                                 </constraints>
                             </view>
-                            <visualEffectView opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rtx-od-2EJ">
+                            <visualEffectView hidden="YES" opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rtx-od-2EJ">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="1Ka-gv-g6o">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>

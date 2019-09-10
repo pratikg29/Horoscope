@@ -16,10 +16,38 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self getHoroscropeData];
+    if (_isCharacteristics) {
+        [self setCharacteristicsTextviewString];
+    }
+    else {
+        [self getHoroscropeData];
+    }
     [self initKit];
     [self initWithAds];
     // Do any additional setup after loading the view.
+}
+
+- (void)setCharacteristicsTextviewString {
+    NSAttributedString *attributedString = [[NSAttributedString alloc] initWithData:[self.strText dataUsingEncoding:NSUnicodeStringEncoding] options:@{ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType } documentAttributes:nil error:nil];
+    NSMutableAttributedString *newString = [[NSMutableAttributedString alloc] initWithAttributedString:attributedString];
+    NSRange range = (NSRange){0,[newString length]};
+    [newString enumerateAttribute:NSFontAttributeName inRange:range options:NSAttributedStringEnumerationLongestEffectiveRangeNotRequired usingBlock:^(id value, NSRange range, BOOL *stop) {
+        if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad)
+        {
+            UIFont *replacementFont =  [UIFont fontWithName:@"Futura" size:22];
+            [newString addAttribute:NSFontAttributeName value:replacementFont range:range];
+            UIColor *color = [UIColor blackColor];
+            [newString addAttribute:NSForegroundColorAttributeName value:color range:range];
+        }
+        else
+        {
+            UIFont *replacementFont =  [UIFont fontWithName:@"Futura" size:16];
+            [newString addAttribute:NSFontAttributeName value:replacementFont range:range];
+            UIColor *color = [UIColor blackColor];
+            [newString addAttribute:NSForegroundColorAttributeName value:color range:range];
+        }
+    }];
+    self.txtView.attributedText = newString;
 }
 
 -(void)initWithAds

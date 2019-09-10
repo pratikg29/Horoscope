@@ -13,7 +13,11 @@
 {
     NSMutableArray *listArr;
     NSMutableArray *urlArr;
+    NSMutableArray *characteristicsArr;
 }
+
+@property BOOL isCharacteristics;
+@property (strong, nonatomic) NSMutableArray *array_data;
 @property (strong, nonatomic) CAPSPageMenu *pageMenu;
 
 @property (strong, nonatomic) IBOutlet UIView *HeaderView;
