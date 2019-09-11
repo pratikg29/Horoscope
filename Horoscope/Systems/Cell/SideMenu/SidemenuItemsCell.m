@@ -21,7 +21,8 @@
 -(void)initKit
 {
     [self.lbl_name initWithAppPropertiesSize:kDefaultFontSizeLarge Type:DFONTMEDIUM];
-    
+    [self.container.layer setCornerRadius:12];
+    [self.container setClipsToBounds:TRUE];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

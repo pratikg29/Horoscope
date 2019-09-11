@@ -17,6 +17,7 @@
 		3038D43723129D77004AF5E7 /* FSPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3038D42F23129D76004AF5E7 /* FSPageControl.swift */; };
 		3038D43823129D77004AF5E7 /* FSPageViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3038D43023129D76004AF5E7 /* FSPageViewLayout.swift */; };
 		3038D43923129D77004AF5E7 /* FSPagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3038D43123129D76004AF5E7 /* FSPagerView.swift */; };
+		303E8B20232941B700114058 /* MoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 303E8B1F232941B600114058 /* MoreViewController.m */; };
 		30F382C423250BA700A983B6 /* HoroscopeSelectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 30F382C323250BA700A983B6 /* HoroscopeSelectionCell.m */; };
 		4D106D7821535F7C0097823D /* TextViewCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D106D7621535F7C0097823D /* TextViewCollectionViewCell.m */; };
 		4D106D7921535F7C0097823D /* TextViewCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D106D7721535F7C0097823D /* TextViewCollectionViewCell.xib */; };
@@ -272,6 +273,8 @@
 		3038D42F23129D76004AF5E7 /* FSPageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSPageControl.swift; sourceTree = "<group>"; };
 		3038D43023129D76004AF5E7 /* FSPageViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSPageViewLayout.swift; sourceTree = "<group>"; };
 		3038D43123129D76004AF5E7 /* FSPagerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSPagerView.swift; sourceTree = "<group>"; };
+		303E8B1E232941B600114058 /* MoreViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoreViewController.h; sourceTree = "<group>"; };
+		303E8B1F232941B600114058 /* MoreViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoreViewController.m; sourceTree = "<group>"; };
 		3056392923183131004E6A6E /* tempJson.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = tempJson.geojson; sourceTree = "<group>"; };
 		30F382C223250BA700A983B6 /* HoroscopeSelectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HoroscopeSelectionCell.h; sourceTree = "<group>"; };
 		30F382C323250BA700A983B6 /* HoroscopeSelectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HoroscopeSelectionCell.m; sourceTree = "<group>"; };
@@ -1673,10 +1676,12 @@
 			children = (
 				4DED80BA21523ABA000C6319 /* PageMenuViewController.h */,
 				4DED80BB21523ABA000C6319 /* PageMenuViewController.m */,
-				4DED80BD21523BC7000C6319 /* YesterdayViewController.h */,
-				4DED80BE21523BC7000C6319 /* YesterdayViewController.m */,
 				4DED80C021523BD2000C6319 /* TodayViewController.h */,
 				4DED80C121523BD2000C6319 /* TodayViewController.m */,
+				303E8B1E232941B600114058 /* MoreViewController.h */,
+				303E8B1F232941B600114058 /* MoreViewController.m */,
+				4DED80BD21523BC7000C6319 /* YesterdayViewController.h */,
+				4DED80BE21523BC7000C6319 /* YesterdayViewController.m */,
 				4DED80C321523BE2000C6319 /* TomorrowViewController.h */,
 				4DED80C421523BE2000C6319 /* TomorrowViewController.m */,
 				4DED80C621523BF4000C6319 /* WeeklyViewController.h */,
@@ -2080,6 +2085,7 @@
 				4DED803E21522A9B000C6319 /* IQKeyboardReturnKeyHandler.m in Sources */,
 				4DED803821522A9B000C6319 /* IQActionSheetToolbar.m in Sources */,
 				4DED802E21522A9B000C6319 /* CSStickyHeaderFlowLayout.m in Sources */,
+				303E8B20232941B700114058 /* MoreViewController.m in Sources */,
 				4DED804C21522A9B000C6319 /* LocalizeHelper.m in Sources */,
 				4DED800C21522A9B000C6319 /* UINavigationController+MYTransition.m in Sources */,
 				4DED805621522A9B000C6319 /* MDCalendarYearSelectorViewCell.m in Sources */,

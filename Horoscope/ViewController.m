@@ -49,7 +49,8 @@
                           @"Pisces are very friendly, so they often find themselves in a company of very different people. Pisces are selfless, they are always willing to help others, without hoping to get anything back. \n Pisces is a Water sign and as such this zodiac sign is characterized by empathy and expressed emotional capacity.",
                           nil];
     
-    self.array_data = [[NSMutableArray alloc]initWithObjects:@"ic_aries", @"ic_taurus", @"ic_gemini", @"ic_cancer", @"ic_leo", @"ic_virgo", @"ic_libra", @"ic_scorpio", @"ic_sagittarius", @"ic_capricorn", @"ic_aquarius", @"ic_pisces", nil];
+//    self.array_data = [[NSMutableArray alloc]initWithObjects:@"ic_aries", @"ic_taurus", @"ic_gemini", @"ic_cancer", @"ic_leo", @"ic_virgo", @"ic_libra", @"ic_scorpio", @"ic_sagittarius", @"ic_capricorn", @"ic_aquarius", @"ic_pisces", nil];
+    self.array_data = [[NSMutableArray alloc]initWithObjects:@"Image", @"Image", @"Image", @"Image", @"Image", @"Image", @"Image", @"ic_scorpio", @"ic_sagittarius", @"ic_capricorn", @"ic_aquarius", @"ic_pisces", nil];
     self.array_title = [[NSMutableArray alloc]initWithObjects:@"Aries", @"Taurus", @"Gemini", @"Cancer", @"Leo", @"Virgo", @"Libra", @"Scorpio", @"Sagittarius", @"Capricorn", @"Aquarius", @"Pisces", nil];
     self.array_name = [[NSMutableArray alloc]initWithObjects:@"aries", @"taurus", @"gemini", @"cancer", @"leo", @"virgo", @"libra", @"scorpio", @"sagittarius", @"capricorn", @"aquarius", @"pisces", nil];
     
@@ -58,7 +59,7 @@
     [self.pagerView registerClass:[FSPagerViewCell class] forCellWithReuseIdentifier:@"cell"];
     self.pagerView.isInfinite = YES;
     self.pagerView.transformer = [[FSPagerViewTransformer alloc] initWithType:FSPagerViewTransformerTypeCoverFlow];
-    self.pagerView.itemSize = CGSizeMake(_pagerView.frame.size.width/2, _pagerView.frame.size.height);
+    self.pagerView.itemSize = CGSizeMake(_pagerView.frame.size.height/1.3, _pagerView.frame.size.height/1.3);
     self.pagerView.decelerationDistance = FSPagerViewAutomaticDistance;
     [self.pagerView setBackgroundColor:[UIColor clearColor]];
     [_txtView setText:_array_detail[0]];
@@ -283,7 +284,7 @@
 {
     FSPagerViewCell * cell = [pagerView dequeueReusableCellWithReuseIdentifier:@"cell" atIndex:index];
     cell.imageView.image = [UIImage imageNamed:self.array_data[index]];
-    [cell setBackgroundColor:[UIColor yellowColor]];
+//    [cell setBackgroundColor:[UIColor yellowColor]];
     cell.imageView.contentMode = UIViewContentModeScaleAspectFit;
     cell.imageView.clipsToBounds = YES;
     return cell;

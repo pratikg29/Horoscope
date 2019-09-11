@@ -26,23 +26,23 @@ static AppDelegate *delegate = nil;
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad)
-    {
-        
-        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"iPad" bundle: nil];
-        UIViewController *lvc = [storyboard instantiateViewControllerWithIdentifier:@"iPadViewController"];
-        self.navigationController=[[UINavigationController alloc]initWithRootViewController:lvc];
-        self.window.rootViewController = self.navigationController;
-        self.navigationController.navigationBar.hidden=YES;
-        //[self.window makeKeyAndVisible];
-        [self.window addSubview:lvc.view];
-        [self.window makeKeyAndVisible];
-        
-    }
-    else
-    {
-        //[NSThread sleepForTimeInterval:4.0];
-    }
+//    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad)
+//    {
+//        
+//        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"iPad" bundle: nil];
+//        UIViewController *lvc = [storyboard instantiateViewControllerWithIdentifier:@"iPadViewController"];
+//        self.navigationController=[[UINavigationController alloc]initWithRootViewController:lvc];
+//        self.window.rootViewController = self.navigationController;
+//        self.navigationController.navigationBar.hidden=YES;
+//        //[self.window makeKeyAndVisible];
+//        [self.window addSubview:lvc.view];
+//        [self.window makeKeyAndVisible];
+//        
+//    }
+//    else
+//    {
+//        //[NSThread sleepForTimeInterval:4.0];
+//    }
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     return YES;
 }

@@ -12,5 +12,6 @@
 @interface SidemenuItemsCell : UITableViewCell
 @property(nonatomic,retain)IBOutlet UILabel *lbl_name;
 @property(nonatomic,retain)IBOutlet UIImageView *imgView_icon;
+@property (strong, nonatomic) IBOutlet UIView *container;
 
 @end
