@@ -101,7 +101,7 @@
     {
         case 0:
         {
-            NSString *sharedMsg=[NSString stringWithFormat:@"https://itunes.apple.com/us/app/daily-horoscope-zodiac-sings/id1449032380?ls=1&mt=8"];
+            NSString *sharedMsg=[NSString stringWithFormat:@"https://itunes.apple.com/1479829461"];
             NSArray* sharedObjects=[NSArray arrayWithObjects:sharedMsg, nil];
             UIActivityViewController *activityViewController = [[UIActivityViewController alloc]
                                                                 initWithActivityItems:sharedObjects applicationActivities:nil];

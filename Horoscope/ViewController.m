@@ -59,7 +59,13 @@
     [self.pagerView registerClass:[FSPagerViewCell class] forCellWithReuseIdentifier:@"cell"];
     self.pagerView.isInfinite = YES;
     self.pagerView.transformer = [[FSPagerViewTransformer alloc] initWithType:FSPagerViewTransformerTypeCoverFlow];
-    self.pagerView.itemSize = CGSizeMake(_pagerView.frame.size.height/1.3, _pagerView.frame.size.height/1.3);
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone)
+    {
+        self.pagerView.itemSize = CGSizeMake(_pagerView.frame.size.height/2.5, _pagerView.frame.size.height/2.5);
+    }
+    else {
+        self.pagerView.itemSize = CGSizeMake(_pagerView.frame.size.height/1.3, _pagerView.frame.size.height/1.3);
+    }
     self.pagerView.decelerationDistance = FSPagerViewAutomaticDistance;
     [self.pagerView setBackgroundColor:[UIColor clearColor]];
     [_txtView setText:_array_detail[0]];
