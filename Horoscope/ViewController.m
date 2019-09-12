@@ -49,8 +49,8 @@
                           @"Pisces are very friendly, so they often find themselves in a company of very different people. Pisces are selfless, they are always willing to help others, without hoping to get anything back. \n Pisces is a Water sign and as such this zodiac sign is characterized by empathy and expressed emotional capacity.",
                           nil];
     
-//    self.array_data = [[NSMutableArray alloc]initWithObjects:@"ic_aries", @"ic_taurus", @"ic_gemini", @"ic_cancer", @"ic_leo", @"ic_virgo", @"ic_libra", @"ic_scorpio", @"ic_sagittarius", @"ic_capricorn", @"ic_aquarius", @"ic_pisces", nil];
-    self.array_data = [[NSMutableArray alloc]initWithObjects:@"Image", @"Image", @"Image", @"Image", @"Image", @"Image", @"Image", @"ic_scorpio", @"ic_sagittarius", @"ic_capricorn", @"ic_aquarius", @"ic_pisces", nil];
+    self.array_data = [[NSMutableArray alloc]initWithObjects:@"ic_aries", @"ic_taurus", @"ic_gemini", @"ic_cancer", @"ic_leo", @"ic_virgo", @"ic_libra", @"ic_scorpio", @"ic_sagittarius", @"ic_capricorn", @"ic_aquarius", @"ic_pisces", nil];
+    self.array_zodiac = [[NSMutableArray alloc]initWithObjects:@"aries", @"taurus", @"gemini", @"cancer", @"leo", @"virgo", @"libra", @"scorpio", @"sagittarius", @"capricorn", @"aquarius", @"pisces", nil];
     self.array_title = [[NSMutableArray alloc]initWithObjects:@"Aries", @"Taurus", @"Gemini", @"Cancer", @"Leo", @"Virgo", @"Libra", @"Scorpio", @"Sagittarius", @"Capricorn", @"Aquarius", @"Pisces", nil];
     self.array_name = [[NSMutableArray alloc]initWithObjects:@"aries", @"taurus", @"gemini", @"cancer", @"leo", @"virgo", @"libra", @"scorpio", @"sagittarius", @"capricorn", @"aquarius", @"pisces", nil];
     
@@ -98,7 +98,7 @@
         GAdInterstitialKey = [responce valueForKeyPath:@"data.google_interstitial"];
         
         [self initWithAds];
-        [[GoogleAds sharedInstance] LoadAndShowFullScreenAd];
+//        [[GoogleAds sharedInstance] LoadAndShowFullScreenAd];
         
     } failure:^(NSError *error) {
         
@@ -110,7 +110,7 @@
     [self rotatingAnimation:_img1 duration:40 from:[NSNumber numberWithFloat:0.0f] to:[NSNumber numberWithFloat: 2*M_PI]];
     [self rotatingAnimation:_img2 duration:70 from:[NSNumber numberWithFloat: 2*M_PI] to:[NSNumber numberWithFloat:0.0f]];
     [self rotatingAnimation:_img3 duration:60 from:[NSNumber numberWithFloat:0.0f] to:[NSNumber numberWithFloat: 2*M_PI]];
-    [[GoogleAds sharedInstance] LoadAndShowFullScreenAd];
+//    [[GoogleAds sharedInstance] LoadAndShowFullScreenAd];
 }
 
 -(void)setupSidemenu
@@ -174,41 +174,13 @@
         }
         else if (self.isRate == NO)
         {
-            [self customAlertShow];
+            if (@available(iOS 10.3, *)) {
+                [SKStoreReviewController requestReview];
+            } else {
+                    // Fallback on earlier versions
+            }
         }
     }
-}
-
-
--(void)customAlertShow
-{
-    UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:@"Rate Daily Horoscope" message:@"If you enjoy using Daily Horoscope, would you mind taking a moment to rate it? It won't take more than a minute.Thanks for your support!" delegate:self cancelButtonTitle:@"No ,Thanks" otherButtonTitles:@"Rate It Now", @"Remind me Later", nil];
-    [alertView show];
-}
-
-- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
-    
-    switch (buttonIndex) {
-        case 0:
-            NSLog(@"That was button at index 0");
-            [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"Rate"];
-            break;
-            
-        case 1:
-            NSLog(@"That was button at index 1");
-            [[UIApplication sharedApplication]openURL:[NSURL URLWithString:[NSString stringWithFormat:@"itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?id=1436566594&onlyLatestVersion=false&pageNumber=0&sortOrdering=1&type=Purple+Software"]] options:@{} completionHandler:nil];
-            [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"Rate"];
-            break;
-            
-        case 2:
-            NSLog(@"That was button at index 2");
-            [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"Rate"];
-            break;
-            
-        default:
-            break;
-    }
-    
 }
 
 -(void)initWithAds
@@ -228,11 +200,6 @@
 }
 
 #pragma mark - CollecionView
-
--(void)reloadCollectionView
-{
-    [self.collectionView reloadData];
-}
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
@@ -283,8 +250,7 @@
 - (FSPagerViewCell *)pagerView:(FSPagerView *)pagerView cellForItemAtIndex:(NSInteger)index
 {
     FSPagerViewCell * cell = [pagerView dequeueReusableCellWithReuseIdentifier:@"cell" atIndex:index];
-    cell.imageView.image = [UIImage imageNamed:self.array_data[index]];
-//    [cell setBackgroundColor:[UIColor yellowColor]];
+    cell.imageView.image = [UIImage imageNamed:self.array_zodiac[index]];
     cell.imageView.contentMode = UIViewContentModeScaleAspectFit;
     cell.imageView.clipsToBounds = YES;
     return cell;

@@ -20,12 +20,14 @@
     [super viewDidLoad];
     self.MenuNames = @[@"Share App",@"Rate US",@"Privacy Policy"];
     self.MenuImages = @[@"ic_share",@"ic_rate",@"ic_privacy_policy"];
+    [self initWithAds];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [self rotatingAnimation:_img1 duration:40 from:[NSNumber numberWithFloat:0.0f] to:[NSNumber numberWithFloat: 2*M_PI]];
     [self rotatingAnimation:_img2 duration:70 from:[NSNumber numberWithFloat: 2*M_PI] to:[NSNumber numberWithFloat:0.0f]];
     [self rotatingAnimation:_img3 duration:60 from:[NSNumber numberWithFloat:0.0f] to:[NSNumber numberWithFloat: 2*M_PI]];
+    [[GoogleAds sharedInstance] LoadAndShowFullScreenAd];
 }
 - (void)rotatingAnimation: (UIImageView *)image duration: (float)duration from: (NSNumber*)From to: (NSNumber*)To {
     CABasicAnimation* animation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
@@ -34,6 +36,16 @@
     animation.duration = duration;
     animation.repeatCount = INFINITY;
     [image.layer addAnimation:animation forKey:@"SpinAnimation"];
+}
+
+-(void)initWithAds
+{
+    NSString *AdsBanner = [[NSUserDefaults standardUserDefaults]
+                           stringForKey:@"AdsBanner"];
+    self.bannerView.adUnitID = AdsBanner;
+    self.bannerView.rootViewController = (id)self;
+    GADRequest *request = [GADRequest request];
+    [self.bannerView loadRequest:request];
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -48,15 +60,16 @@
     if(cell == nil)
     {
         NSArray *nib;
-        if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone)
-        {
-            nib = [[NSBundle mainBundle]loadNibNamed:@"SidemenuItemsCell" owner:self options:nil];
-        }
-        else
-        {
-            nib = [[NSBundle mainBundle]loadNibNamed:@"SidemenuItemsCelliPad" owner:self options:nil];
-            
-        }
+        nib = [[NSBundle mainBundle]loadNibNamed:@"SidemenuItemsCell" owner:self options:nil];
+//        if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone)
+//        {
+//            nib = [[NSBundle mainBundle]loadNibNamed:@"SidemenuItemsCell" owner:self options:nil];
+//        }
+//        else
+//        {
+//            nib = [[NSBundle mainBundle]loadNibNamed:@"SidemenuItemsCelliPad" owner:self options:nil];
+//
+//        }
         cell = [nib objectAtIndex:0];
     }
     
@@ -70,20 +83,19 @@
 
 //- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 //{
-//    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone)
-//    {
-//        return 50;
-//    }
-//    else
-//    {
-//        return 70;
-//    }
+////    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad)
+////    {
+////        return 70;
+////    }
+//    return tableView.estimatedRowHeight;
 //}
 
 #pragma mark - tableView Delegate
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    SidemenuItemsCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    
     NSLog(@"%ld",(long)indexPath.row);
     switch (indexPath.row)
     {
@@ -93,14 +105,15 @@
             NSArray* sharedObjects=[NSArray arrayWithObjects:sharedMsg, nil];
             UIActivityViewController *activityViewController = [[UIActivityViewController alloc]
                                                                 initWithActivityItems:sharedObjects applicationActivities:nil];
-            activityViewController.popoverPresentationController.sourceView = self.view;
+            activityViewController.popoverPresentationController.sourceView = cell.container;
             [self presentViewController:activityViewController animated:YES completion:nil];
             break;
         }
         case 1:
         {
-            if (@available(iOS 10.0, *)) {
-                [[UIApplication sharedApplication]openURL:[NSURL URLWithString:[NSString stringWithFormat:@"itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?id=1436973436&onlyLatestVersion=false&pageNumber=0&sortOrdering=1&type=Purple+Software"]] options:@{} completionHandler:nil];
+            
+            if (@available(iOS 10.3, *)) {
+                [SKStoreReviewController requestReview];
             } else {
                     // Fallback on earlier versions
             }

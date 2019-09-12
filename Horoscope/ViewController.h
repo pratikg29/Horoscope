@@ -31,6 +31,7 @@
 @property (strong, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (strong, nonatomic) NSMutableArray *array_detail;
 @property (strong, nonatomic) NSMutableArray *array_data;
+@property (strong, nonatomic) NSMutableArray *array_zodiac;
 @property (strong, nonatomic) NSMutableArray *array_name;
 @property (strong, nonatomic) NSMutableArray *array_title;
 @property (strong, nonatomic) IBOutlet GADBannerView *bannerView;

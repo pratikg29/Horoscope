@@ -8,6 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		300F2EAA232584DE002E883C /* PagerViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 300F2EA9232584DE002E883C /* PagerViewCell.m */; };
+		303793E2232A302300759CFD /* cancer.png in Resources */ = {isa = PBXBuildFile; fileRef = 303793D6232A302000759CFD /* cancer.png */; };
+		303793E3232A302300759CFD /* aquarius.png in Resources */ = {isa = PBXBuildFile; fileRef = 303793D7232A302000759CFD /* aquarius.png */; };
+		303793E4232A302300759CFD /* aries.png in Resources */ = {isa = PBXBuildFile; fileRef = 303793D8232A302000759CFD /* aries.png */; };
+		303793E5232A302300759CFD /* capricorn.png in Resources */ = {isa = PBXBuildFile; fileRef = 303793D9232A302100759CFD /* capricorn.png */; };
+		303793E6232A302300759CFD /* gemini.png in Resources */ = {isa = PBXBuildFile; fileRef = 303793DA232A302100759CFD /* gemini.png */; };
+		303793E7232A302300759CFD /* pisces.png in Resources */ = {isa = PBXBuildFile; fileRef = 303793DB232A302100759CFD /* pisces.png */; };
+		303793E8232A302300759CFD /* sagittarius.png in Resources */ = {isa = PBXBuildFile; fileRef = 303793DC232A302200759CFD /* sagittarius.png */; };
+		303793E9232A302300759CFD /* libra.png in Resources */ = {isa = PBXBuildFile; fileRef = 303793DD232A302200759CFD /* libra.png */; };
+		303793EA232A302300759CFD /* virgo.png in Resources */ = {isa = PBXBuildFile; fileRef = 303793DE232A302200759CFD /* virgo.png */; };
+		303793EB232A302300759CFD /* leo.png in Resources */ = {isa = PBXBuildFile; fileRef = 303793DF232A302200759CFD /* leo.png */; };
+		303793EC232A302300759CFD /* taurus.png in Resources */ = {isa = PBXBuildFile; fileRef = 303793E0232A302200759CFD /* taurus.png */; };
+		303793ED232A302300759CFD /* scorpio.png in Resources */ = {isa = PBXBuildFile; fileRef = 303793E1232A302300759CFD /* scorpio.png */; };
+		303793EF232A3DA800759CFD /* 1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 303793EE232A3DA800759CFD /* 1024.png */; };
 		3038D42423129599004AF5E7 /* hello.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3038D42323129599004AF5E7 /* hello.swift */; };
 		3038D43223129D77004AF5E7 /* FSPagerViewLayoutAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3038D42A23129D76004AF5E7 /* FSPagerViewLayoutAttributes.swift */; };
 		3038D43323129D77004AF5E7 /* FSPagerCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3038D42B23129D76004AF5E7 /* FSPagerCollectionView.swift */; };
@@ -262,6 +275,19 @@
 		2A110858C608B4E226A54F5B /* Pods-Horoscope.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Horoscope.release.xcconfig"; path = "Pods/Target Support Files/Pods-Horoscope/Pods-Horoscope.release.xcconfig"; sourceTree = "<group>"; };
 		300F2EA8232584DE002E883C /* PagerViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PagerViewCell.h; sourceTree = "<group>"; };
 		300F2EA9232584DE002E883C /* PagerViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PagerViewCell.m; sourceTree = "<group>"; };
+		303793D6232A302000759CFD /* cancer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cancer.png; sourceTree = "<group>"; };
+		303793D7232A302000759CFD /* aquarius.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aquarius.png; sourceTree = "<group>"; };
+		303793D8232A302000759CFD /* aries.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aries.png; sourceTree = "<group>"; };
+		303793D9232A302100759CFD /* capricorn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = capricorn.png; sourceTree = "<group>"; };
+		303793DA232A302100759CFD /* gemini.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gemini.png; sourceTree = "<group>"; };
+		303793DB232A302100759CFD /* pisces.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pisces.png; sourceTree = "<group>"; };
+		303793DC232A302200759CFD /* sagittarius.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sagittarius.png; sourceTree = "<group>"; };
+		303793DD232A302200759CFD /* libra.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = libra.png; sourceTree = "<group>"; };
+		303793DE232A302200759CFD /* virgo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = virgo.png; sourceTree = "<group>"; };
+		303793DF232A302200759CFD /* leo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leo.png; sourceTree = "<group>"; };
+		303793E0232A302200759CFD /* taurus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = taurus.png; sourceTree = "<group>"; };
+		303793E1232A302300759CFD /* scorpio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scorpio.png; sourceTree = "<group>"; };
+		303793EE232A3DA800759CFD /* 1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1024.png; sourceTree = "<group>"; };
 		3038D42223129598004AF5E7 /* Horoscope-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Horoscope-Bridging-Header.h"; sourceTree = "<group>"; };
 		3038D42323129599004AF5E7 /* hello.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hello.swift; sourceTree = "<group>"; };
 		3038D42923129D76004AF5E7 /* FSPagerViewObjcCompat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSPagerViewObjcCompat.h; sourceTree = "<group>"; };
@@ -718,6 +744,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		303793D5232A301400759CFD /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				303793D7232A302000759CFD /* aquarius.png */,
+				303793D8232A302000759CFD /* aries.png */,
+				303793D6232A302000759CFD /* cancer.png */,
+				303793D9232A302100759CFD /* capricorn.png */,
+				303793DA232A302100759CFD /* gemini.png */,
+				303793DF232A302200759CFD /* leo.png */,
+				303793DD232A302200759CFD /* libra.png */,
+				303793DB232A302100759CFD /* pisces.png */,
+				303793DC232A302200759CFD /* sagittarius.png */,
+				303793E1232A302300759CFD /* scorpio.png */,
+				303793E0232A302200759CFD /* taurus.png */,
+				303793DE232A302200759CFD /* virgo.png */,
+				303793EE232A3DA800759CFD /* 1024.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		3038D42823129D5B004AF5E7 /* Pager Source */ = {
 			isa = PBXGroup;
 			children = (
@@ -789,6 +835,7 @@
 		4DED7DD521522A9B000C6319 /* Systems */ = {
 			isa = PBXGroup;
 			children = (
+				303793D5232A301400759CFD /* Images */,
 				3038D42823129D5B004AF5E7 /* Pager Source */,
 				4DED80AC21523747000C6319 /* Cell */,
 				4DED7DD621522A9B000C6319 /* AssetsData */,
@@ -1836,6 +1883,7 @@
 				4DED7FEB21522A9B000C6319 /* Roboto-Thin.ttf in Resources */,
 				4DED809521522A9B000C6319 /* NotificationBackgroundError.png in Resources */,
 				4DED7FFE21522A9B000C6319 /* DialogTableviewView.xib in Resources */,
+				303793EA232A302300759CFD /* virgo.png in Resources */,
 				4DED7FF121522A9B000C6319 /* RobotoCondensed-LightItalic.ttf in Resources */,
 				4DED7DCB21522A1F000C6319 /* LaunchScreen.storyboard in Resources */,
 				4DED7DC821522A1F000C6319 /* Assets.xcassets in Resources */,
@@ -1846,6 +1894,7 @@
 				4DED809821522A9B000C6319 /* NotificationBackgroundErrorIcon@2x.png in Resources */,
 				4DED7FEE21522A9B000C6319 /* RobotoCondensed-BoldItalic.ttf in Resources */,
 				4DED80A221522A9B000C6319 /* NotificationBackgroundWarningIcon@2x.png in Resources */,
+				303793EF232A3DA800759CFD /* 1024.png in Resources */,
 				4DED7FEF21522A9B000C6319 /* RobotoCondensed-Italic.ttf in Resources */,
 				4DED80A021522A9B000C6319 /* NotificationBackgroundWarning@2x.png in Resources */,
 				4D106D81215396DA0097823D /* MainCollectionViewCelliPad.xib in Resources */,
@@ -1855,17 +1904,26 @@
 				4DED7FF221522A9B000C6319 /* RobotoCondensed-Regular.ttf in Resources */,
 				4DED7FF021522A9B000C6319 /* RobotoCondensed-Light.ttf in Resources */,
 				4DED800221522A9B000C6319 /* DialogTextCell.xib in Resources */,
+				303793E4232A302300759CFD /* aries.png in Resources */,
+				303793E5232A302300759CFD /* capricorn.png in Resources */,
+				303793E9232A302300759CFD /* libra.png in Resources */,
 				4DED809E21522A9B000C6319 /* NotificationBackgroundSuccessIcon@2x.png in Resources */,
 				4F2E3A8F215538310026E12E /* SidemenuItemsCell.xib in Resources */,
 				4DED7FFA21522A9B000C6319 /* CSAlwaysOnTopHeader_events.xib in Resources */,
 				4DED800021522A9B000C6319 /* DialogTableviewViewSub.xib in Resources */,
+				303793E8232A302300759CFD /* sagittarius.png in Resources */,
+				303793E3232A302300759CFD /* aquarius.png in Resources */,
 				4DED7FE921522A9B000C6319 /* Roboto-MediumItalic.ttf in Resources */,
 				4DED7FE221522A9B000C6319 /* Roboto-BlackItalic.ttf in Resources */,
 				4DED7DC321522A1F000C6319 /* Main.storyboard in Resources */,
+				303793E2232A302300759CFD /* cancer.png in Resources */,
 				4DED80A121522A9B000C6319 /* NotificationBackgroundWarningIcon.png in Resources */,
 				4DED7FE521522A9B000C6319 /* Roboto-Italic.ttf in Resources */,
+				303793E7232A302300759CFD /* pisces.png in Resources */,
 				4DED809D21522A9B000C6319 /* NotificationBackgroundSuccessIcon.png in Resources */,
 				4DED809721522A9B000C6319 /* NotificationBackgroundErrorIcon.png in Resources */,
+				303793EB232A302300759CFD /* leo.png in Resources */,
+				303793ED232A302300759CFD /* scorpio.png in Resources */,
 				4DED809621522A9B000C6319 /* NotificationBackgroundError@2x.png in Resources */,
 				4DED809B21522A9B000C6319 /* NotificationBackgroundSuccess.png in Resources */,
 				4DED80A821522A9B000C6319 /* TSMessagesDefaultDesign.json in Resources */,
@@ -1879,9 +1937,11 @@
 				4DED7FE821522A9B000C6319 /* Roboto-Medium.ttf in Resources */,
 				4F2E3A82215538220026E12E /* CoverView.xib in Resources */,
 				4DED7FF421522A9B000C6319 /* GoogleService-Info.plist in Resources */,
+				303793E6232A302300759CFD /* gemini.png in Resources */,
 				4DED7FEA21522A9B000C6319 /* Roboto-Regular.ttf in Resources */,
 				4DED809A21522A9B000C6319 /* NotificationBackgroundMessage@2x.png in Resources */,
 				4DED7FE121522A9B000C6319 /* Roboto-Black.ttf in Resources */,
+				303793EC232A302300759CFD /* taurus.png in Resources */,
 				4DF0F53121E66ED6009FCFB0 /* ic_logo.png in Resources */,
 				4F2E3A93215538310026E12E /* SidemenuProfileCelliPad.xib in Resources */,
 				4DED80A421522A9B000C6319 /* NotificationButtonBackground@2x.png in Resources */,
@@ -2251,18 +2311,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: pankaj bhalala (WSG6U9LNB5)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: pankaj bhalala (WSG6U9LNB5)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Hardik lukhi (S4H5767N29)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Hardik lukhi (S4H5767N29)";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = WSG6U9LNB5;
+				DEVELOPMENT_TEAM = S4H5767N29;
 				GCC_NO_COMMON_BLOCKS = NO;
 				INFOPLIST_FILE = Horoscope/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dailyhoroscope.astrology.zodiac.new;
+				PRODUCT_BUNDLE_IDENTIFIER = com.myzodiac.horoscope;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "caa6ab52-f62d-4d6e-a84e-20653e5348f0";
-				PROVISIONING_PROFILE_SPECIFIER = "Distribution - Daily Horoscope - Zodiac Sings";
+				PROVISIONING_PROFILE_SPECIFIER = Distri_DailyHoroscope;
 				SWIFT_OBJC_BRIDGING_HEADER = "Horoscope/Horoscope-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -2276,18 +2336,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: pankaj bhalala (WSG6U9LNB5)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: pankaj bhalala (WSG6U9LNB5)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Hardik lukhi (S4H5767N29)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Hardik lukhi (S4H5767N29)";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = WSG6U9LNB5;
+				DEVELOPMENT_TEAM = S4H5767N29;
 				GCC_NO_COMMON_BLOCKS = NO;
 				INFOPLIST_FILE = Horoscope/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dailyhoroscope.astrology.zodiac.new;
+				PRODUCT_BUNDLE_IDENTIFIER = com.myzodiac.horoscope;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "caa6ab52-f62d-4d6e-a84e-20653e5348f0";
-				PROVISIONING_PROFILE_SPECIFIER = "Distribution - Daily Horoscope - Zodiac Sings";
+				PROVISIONING_PROFILE_SPECIFIER = Distri_DailyHoroscope;
 				SWIFT_OBJC_BRIDGING_HEADER = "Horoscope/Horoscope-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -58,6 +58,7 @@
     self.bannerView.rootViewController = (id)self;
     GADRequest *request = [GADRequest request];
     [self.bannerView loadRequest:request];
+    [[GoogleAds sharedInstance] LoadAndShowFullScreenAd];
 }
 
 -(void)initKit

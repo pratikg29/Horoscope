@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "init.h"
 
 @interface MoreViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 {
@@ -22,5 +23,6 @@
 @property (strong, nonatomic) IBOutlet UITableView *table;
 @property (strong, nonatomic) IBOutlet UIView *headerView;
 @property (strong, nonatomic) IBOutlet UILabel *lblTitle;
+@property (strong, nonatomic) IBOutlet GADBannerView *bannerView;
 
 @end

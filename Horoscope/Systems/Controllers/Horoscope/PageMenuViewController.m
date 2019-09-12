@@ -30,7 +30,6 @@
     
 //    [self PageMenuSetup];
     [self initKit];
-    [[GoogleAds sharedInstance] LoadAndShowFullScreenAd];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -46,6 +45,7 @@
     [self.lblTitle initWithAppPropertiesSize:kDefaultFontSizeExtraLarge20 Type:DFONTMEDIUM];
     [self.lblTitle initWithAppPropertiesColorWhite];
     self.lblTitle.text = self.strHoroTitle;
+    [self initWithAds];
 }
 
 - (void)rotatingAnimation: (UIImageView *)image duration: (float)duration from: (NSNumber*)From to: (NSNumber*)To {
@@ -55,6 +55,16 @@
     animation.duration = duration;
     animation.repeatCount = INFINITY;
     [image.layer addAnimation:animation forKey:@"SpinAnimation"];
+}
+
+-(void)initWithAds
+{
+    NSString *AdsBanner = [[NSUserDefaults standardUserDefaults]
+                           stringForKey:@"AdsBanner"];
+    self.bannerView.adUnitID = AdsBanner;
+    self.bannerView.rootViewController = (id)self;
+    GADRequest *request = [GADRequest request];
+    [self.bannerView loadRequest:request];
 }
 
 - (IBAction)Click_Back:(id)sender {

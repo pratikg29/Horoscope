@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
+    <device id="ipad11_0rounded" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -19,39 +19,52 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XIP-xS-GQC">
-                        <rect key="frame" x="10" y="10.5" width="355" height="55"/>
+                        <rect key="frame" x="10" y="10" width="355" height="70.5"/>
                         <subviews>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ezB-f3-2O8">
-                                <rect key="frame" x="0.0" y="0.0" width="355" height="55"/>
+                                <rect key="frame" x="0.0" y="0.0" width="355" height="70.5"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ayZ-JA-8d8">
-                                    <rect key="frame" x="0.0" y="0.0" width="355" height="55"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="355" height="70.5"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 </view>
                                 <blurEffect style="extraLight"/>
                             </visualEffectView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="56" translatesAutoresizingMaskIntoConstraints="NO" id="Huc-Qi-9OZ">
-                                <rect key="frame" x="55" y="17" width="290" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="70" y="23" width="275" height="24.5"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="17"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="22"/>
+                                </variation>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rfT-oG-iwI">
-                                <rect key="frame" x="10" y="10" width="35" height="35"/>
+                                <rect key="frame" x="10" y="10.5" width="50" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="PLp-XY-tx8"/>
-                                    <constraint firstAttribute="width" constant="35" id="m38-8m-8cN"/>
+                                    <constraint firstAttribute="height" constant="35" id="PLp-XY-tx8">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="35" id="m38-8m-8cN">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                                    </constraint>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="rfT-oG-iwI" firstAttribute="top" secondItem="XIP-xS-GQC" secondAttribute="top" constant="10" id="6ke-un-fwe"/>
+                            <constraint firstItem="rfT-oG-iwI" firstAttribute="top" secondItem="XIP-xS-GQC" secondAttribute="top" constant="10" id="6ke-un-fwe">
+                                <variation key="heightClass=regular-widthClass=compact" constant="15"/>
+                            </constraint>
                             <constraint firstItem="Huc-Qi-9OZ" firstAttribute="leading" secondItem="rfT-oG-iwI" secondAttribute="trailing" constant="10" id="7g9-CU-ZIZ"/>
                             <constraint firstAttribute="trailing" secondItem="Huc-Qi-9OZ" secondAttribute="trailing" constant="10" id="9NC-FQ-ZGi"/>
                             <constraint firstItem="Huc-Qi-9OZ" firstAttribute="leading" secondItem="rfT-oG-iwI" secondAttribute="trailing" constant="10" id="Kei-Ou-Xef"/>
                             <constraint firstItem="ezB-f3-2O8" firstAttribute="leading" secondItem="XIP-xS-GQC" secondAttribute="leading" id="LnB-4V-spX"/>
-                            <constraint firstAttribute="bottom" secondItem="rfT-oG-iwI" secondAttribute="bottom" constant="10" id="V7Y-aW-zlE"/>
+                            <constraint firstAttribute="bottom" secondItem="rfT-oG-iwI" secondAttribute="bottom" constant="10" id="V7Y-aW-zlE">
+                                <variation key="heightClass=regular-widthClass=compact" constant="15"/>
+                            </constraint>
                             <constraint firstAttribute="trailing" secondItem="ezB-f3-2O8" secondAttribute="trailing" id="Wgp-l5-qez"/>
-                            <constraint firstItem="rfT-oG-iwI" firstAttribute="leading" secondItem="XIP-xS-GQC" secondAttribute="leading" constant="10" id="bSd-SN-RCQ"/>
+                            <constraint firstItem="rfT-oG-iwI" firstAttribute="leading" secondItem="XIP-xS-GQC" secondAttribute="leading" constant="10" id="bSd-SN-RCQ">
+                                <variation key="heightClass=regular-widthClass=compact" constant="15"/>
+                            </constraint>
                             <constraint firstAttribute="bottom" secondItem="ezB-f3-2O8" secondAttribute="bottom" id="gj5-m1-sHH"/>
                             <constraint firstItem="Huc-Qi-9OZ" firstAttribute="centerY" secondItem="XIP-xS-GQC" secondAttribute="centerY" id="hX5-kD-5bz"/>
                             <constraint firstItem="rfT-oG-iwI" firstAttribute="centerY" secondItem="XIP-xS-GQC" secondAttribute="centerY" id="hdG-C0-9Wl"/>

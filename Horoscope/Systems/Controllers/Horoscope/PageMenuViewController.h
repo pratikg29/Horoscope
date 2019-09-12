@@ -24,11 +24,13 @@
 @property (strong, nonatomic) IBOutlet UILabel *lblTitle;
 @property (strong, nonatomic) IBOutlet UIView *ContainerView;
 
+@property (strong, nonatomic) IBOutlet UIView *galaxyView;
 @property (strong, nonatomic) IBOutlet UIImageView *img1;
 @property (strong, nonatomic) IBOutlet UIImageView *img2;
 @property (strong, nonatomic) IBOutlet UIImageView *img3;
 
 @property (strong, nonatomic) IBOutlet UITableView *table;
+@property (strong, nonatomic) IBOutlet GADBannerView *bannerView;
 
 @property (strong, nonatomic) NSString *strHoroName;
 @property (strong, nonatomic) NSString *strHoroTitle;

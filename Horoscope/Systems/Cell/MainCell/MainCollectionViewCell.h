@@ -14,5 +14,6 @@
 @property (strong, nonatomic) IBOutlet UIImageView *imgView;
 @property (strong, nonatomic) IBOutlet UILabel *lblTitle;
 @property (strong, nonatomic) IBOutlet UIVisualEffectView *blurView;
+@property (strong, nonatomic) IBOutlet UIVisualEffectView *blurLabelView;
 
 @end

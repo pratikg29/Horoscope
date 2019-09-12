@@ -22,6 +22,8 @@
     [_blurView setClipsToBounds:TRUE];
     [_blurView.layer setBorderColor:[UIColor whiteColor].CGColor];
     [_blurView.layer setBorderWidth:2];
+    [_blurLabelView.layer setCornerRadius:6];
+    [_blurLabelView setClipsToBounds:TRUE]; 
     [self.lblTitle initWithAppPropertiesSize:kDefaultFontSizeLarge Type:DFONTMEDIUM];
     [self.lblTitle initWithAppPropertiesColorWhite];
 }
