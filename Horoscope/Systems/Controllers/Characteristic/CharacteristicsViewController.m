@@ -124,7 +124,7 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     MainCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"MainCollectionViewCell" forIndexPath:indexPath];
-    cell.imgView.image = [UIImage imageNamed:[self.array_data objectAtIndex:indexPath.row]];
+    cell.imgView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.png",[self.array_name objectAtIndex:indexPath.row]]];
     cell.lblTitle.text = [self.array_title objectAtIndex:indexPath.row];
     return cell;
 }

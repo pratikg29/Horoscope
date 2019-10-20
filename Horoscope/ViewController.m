@@ -211,11 +211,10 @@
 {
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad)
     {
-        return CGSizeMake(200 , 200);
+        return CGSizeMake(collectionView.frame.size.width/4 , collectionView.frame.size.width/4);
     }
     else
     {
-//        return CGSizeMake(150 , 150);
         return CGSizeMake(collectionView.frame.size.width/3 , collectionView.frame.size.width/3);
     }
     
