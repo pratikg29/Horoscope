@@ -9,9 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "init.h"
 #import "Horoscope-Swift.h"
-#import "FSPagerViewObjcCompat.h"
 
-@interface ViewController : UIViewController<CoverViewDelegate,FSPagerViewDataSource,FSPagerViewDelegate>
+@interface ViewController : UIViewController<CoverViewDelegate>
 {
     SideView *sideView;
     CoverView *bgCoverView;
@@ -20,7 +19,6 @@
 
 @property (strong, nonatomic) CAPSPageMenu *pageMenu;
 
-@property (strong, nonatomic) IBOutlet FSPagerView *pagerView;
 
 
 @property (strong, nonatomic) IBOutlet UIView *HeaderView;

@@ -19,30 +19,11 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		02BCE08210AF03682205EC28C0779AD4 /* FSPagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B237834339E1764F726CBCDAEC0C9CD /* FSPagerView.swift */; };
-		18B92CA600AC679D3C9A2257066FCC27 /* FSPagerView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 165C2A12FEB00554250181E0CA95E4B9 /* FSPagerView-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		22A5799B211F8AD4CCFCF4655840BE5E /* FSPagerViewObjcCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BE4798A33BF4F9E2F46F63EE301AEF /* FSPagerViewObjcCompat.m */; };
-		2D182530CD6BB5E5DFA2A5DBD56A373D /* Pods-Horoscope-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ECCBECF11D780439BC149F58508321CB /* Pods-Horoscope-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		7526B6A1B8C2F46F52E3A75149B56D83 /* FSPagerViewLayoutAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B7BD91FC92D549EB35D072967CAA5C /* FSPagerViewLayoutAttributes.swift */; };
-		7E510F9A49F37C020D6B208E7E801637 /* Pods-Horoscope-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F807E4B4D89248E37192B7CD58688D7 /* Pods-Horoscope-dummy.m */; };
-		8032277151AD5BB27F311020CF8BC829 /* FSPagerCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D001B1F7622C113AA76277799234BABF /* FSPagerCollectionView.swift */; };
-		9671ABE88CC9131A7D713B4EF038C68A /* FSPageViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9548035DDDB44A11B2F34FD227E7E4EC /* FSPageViewLayout.swift */; };
-		E06EE07DBBF7F4835106D5017B7EE1BD /* FSPagerView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE0C6126B16F3B80ADC0485F1208748 /* FSPagerView-dummy.m */; };
-		E9BD40685399DF26D5807DB4DD711958 /* FSPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AFE09628454555D7421F05D7D376C5 /* FSPageControl.swift */; };
-		F2BB46EC8E8A873D86D997C918152D82 /* FSPagerViewObjcCompat.h in Headers */ = {isa = PBXBuildFile; fileRef = C9786291BC3E44F77B54534D0EB365B3 /* FSPagerViewObjcCompat.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		F342C8746DDFFA018288843A63E0913A /* FSPageViewTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C201046942D9E44D2F435DCD6D2533E5 /* FSPageViewTransformer.swift */; };
-		FF1340C71721360AA75EA57CF25998D5 /* FSPagerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E39BD7A053C56CFD39CC37D4B08FD84 /* FSPagerViewCell.swift */; };
+		939B499488589F33F32A9E00FCA039B2 /* Pods-Horoscope-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D1D186766BDDD35C33E752E0B75BE68 /* Pods-Horoscope-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		6258DE7BC74A166960CA3FE9B35DC066 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D4F8239FB329387A8476B964D92D92E7;
-			remoteInfo = FSPagerView;
-		};
-		D071319D5903190C4A8DCA049BC5D505 /* PBXContainerItemProxy */ = {
+		F81C030E5CA7AEC12861ABAD3F15018F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -52,43 +33,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		03F1904D05C62F7CBDFB2BB4D7C92C2E /* FSPagerView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FSPagerView.xcconfig; sourceTree = "<group>"; };
-		0F47FB5E28EE8C8342B1776D813D1A4C /* libFSPagerView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libFSPagerView.a; path = libFSPagerView.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		165C2A12FEB00554250181E0CA95E4B9 /* FSPagerView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FSPagerView-umbrella.h"; sourceTree = "<group>"; };
-		1B237834339E1764F726CBCDAEC0C9CD /* FSPagerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FSPagerView.swift; path = Sources/FSPagerView.swift; sourceTree = "<group>"; };
-		1C8336A3BD5AA8670C3562B0A006D7F8 /* Pods-Horoscope.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Horoscope.debug.xcconfig"; sourceTree = "<group>"; };
-		1CA0BAB36574A4E1BE31EDBC0B9387E7 /* FSPagerView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FSPagerView.modulemap; sourceTree = "<group>"; };
-		1F807E4B4D89248E37192B7CD58688D7 /* Pods-Horoscope-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Horoscope-dummy.m"; sourceTree = "<group>"; };
-		24D9BE27F62FD5E799D106CF70A9322C /* Google-Mobile-Ads-SDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Google-Mobile-Ads-SDK.xcconfig"; sourceTree = "<group>"; };
-		2EA809260FB879C5BC4D4FCD0EA93046 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = Frameworks/frameworks/GoogleMobileAds.framework; sourceTree = "<group>"; };
-		40B7BD91FC92D549EB35D072967CAA5C /* FSPagerViewLayoutAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FSPagerViewLayoutAttributes.swift; path = Sources/FSPagerViewLayoutAttributes.swift; sourceTree = "<group>"; };
-		4EAE579BAFD87D1C04566DBE920F72C2 /* Pods-Horoscope.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Horoscope.modulemap"; sourceTree = "<group>"; };
+		0A0726D85AB2FAECA094464EC7FB536B /* Pods-Horoscope.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Horoscope.release.xcconfig"; sourceTree = "<group>"; };
+		137FC607F4C6AC3B63170E3A1B4784A6 /* Pods-Horoscope-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Horoscope-acknowledgements.plist"; sourceTree = "<group>"; };
+		161DACB3951544C43142E6FC540DCDB2 /* Google-Mobile-Ads-SDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Google-Mobile-Ads-SDK.xcconfig"; sourceTree = "<group>"; };
+		505A7B0FEEF91087F2685FEB2E7C3ECF /* Pods-Horoscope.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Horoscope.debug.xcconfig"; sourceTree = "<group>"; };
 		507EC4D3AD4836D6989496A12FD76F3E /* libPods-Horoscope.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Horoscope.a"; path = "libPods-Horoscope.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5E39BD7A053C56CFD39CC37D4B08FD84 /* FSPagerViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FSPagerViewCell.swift; path = Sources/FSPagerViewCell.swift; sourceTree = "<group>"; };
-		68AFE09628454555D7421F05D7D376C5 /* FSPageControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FSPageControl.swift; path = Sources/FSPageControl.swift; sourceTree = "<group>"; };
-		7590A90F3070733D69347BF169E165A6 /* FSPagerView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FSPagerView-prefix.pch"; sourceTree = "<group>"; };
-		8AF2E258F32B3E24D1AC2BE56A3F06EB /* Pods-Horoscope.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Horoscope.release.xcconfig"; sourceTree = "<group>"; };
-		9548035DDDB44A11B2F34FD227E7E4EC /* FSPageViewLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FSPageViewLayout.swift; path = Sources/FSPageViewLayout.swift; sourceTree = "<group>"; };
+		597FB4AD232F3F88F832C28392A556C8 /* Pods-Horoscope-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Horoscope-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9D1D186766BDDD35C33E752E0B75BE68 /* Pods-Horoscope-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Horoscope-dummy.m"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A1FDB0D78BB30128DAC4BBA2FD5A7BFD /* Pods-Horoscope-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Horoscope-acknowledgements.plist"; sourceTree = "<group>"; };
-		A6BE4798A33BF4F9E2F46F63EE301AEF /* FSPagerViewObjcCompat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSPagerViewObjcCompat.m; path = Sources/FSPagerViewObjcCompat.m; sourceTree = "<group>"; };
-		A70ABE4F93E6E6AF7D03478005EF23A3 /* Pods-Horoscope-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Horoscope-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C201046942D9E44D2F435DCD6D2533E5 /* FSPageViewTransformer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FSPageViewTransformer.swift; path = Sources/FSPageViewTransformer.swift; sourceTree = "<group>"; };
-		C9786291BC3E44F77B54534D0EB365B3 /* FSPagerViewObjcCompat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSPagerViewObjcCompat.h; path = Sources/FSPagerViewObjcCompat.h; sourceTree = "<group>"; };
-		D001B1F7622C113AA76277799234BABF /* FSPagerCollectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FSPagerCollectionView.swift; path = Sources/FSPagerCollectionView.swift; sourceTree = "<group>"; };
-		ECCBECF11D780439BC149F58508321CB /* Pods-Horoscope-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Horoscope-umbrella.h"; sourceTree = "<group>"; };
-		FAE0C6126B16F3B80ADC0485F1208748 /* FSPagerView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FSPagerView-dummy.m"; sourceTree = "<group>"; };
+		EF69CE5CF9FE834C180825C81B83A848 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = Frameworks/frameworks/GoogleMobileAds.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4322F7B180C457417A41FA8C03A72393 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		629433005F0B7FE5D052B3AC87F56356 /* Frameworks */ = {
+		BD9472BBAD6A937F77E9FFCDD9A5ABAF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -98,86 +55,68 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		26303253CC4A954FFB3D2D3946FEB0AA /* Frameworks */ = {
+		1157650B3C5CE7362E52422AE94FB4E1 /* Pods-Horoscope */ = {
 			isa = PBXGroup;
 			children = (
-				2EA809260FB879C5BC4D4FCD0EA93046 /* GoogleMobileAds.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		2D6FB58B51936297AF304C1CD36EDEF5 /* Pods-Horoscope */ = {
-			isa = PBXGroup;
-			children = (
-				4EAE579BAFD87D1C04566DBE920F72C2 /* Pods-Horoscope.modulemap */,
-				A70ABE4F93E6E6AF7D03478005EF23A3 /* Pods-Horoscope-acknowledgements.markdown */,
-				A1FDB0D78BB30128DAC4BBA2FD5A7BFD /* Pods-Horoscope-acknowledgements.plist */,
-				1F807E4B4D89248E37192B7CD58688D7 /* Pods-Horoscope-dummy.m */,
-				ECCBECF11D780439BC149F58508321CB /* Pods-Horoscope-umbrella.h */,
-				1C8336A3BD5AA8670C3562B0A006D7F8 /* Pods-Horoscope.debug.xcconfig */,
-				8AF2E258F32B3E24D1AC2BE56A3F06EB /* Pods-Horoscope.release.xcconfig */,
+				597FB4AD232F3F88F832C28392A556C8 /* Pods-Horoscope-acknowledgements.markdown */,
+				137FC607F4C6AC3B63170E3A1B4784A6 /* Pods-Horoscope-acknowledgements.plist */,
+				9D1D186766BDDD35C33E752E0B75BE68 /* Pods-Horoscope-dummy.m */,
+				505A7B0FEEF91087F2685FEB2E7C3ECF /* Pods-Horoscope.debug.xcconfig */,
+				0A0726D85AB2FAECA094464EC7FB536B /* Pods-Horoscope.release.xcconfig */,
 			);
 			name = "Pods-Horoscope";
 			path = "Target Support Files/Pods-Horoscope";
 			sourceTree = "<group>";
 		};
-		343F0C4B998A4AD5A5AB83043994F11F /* Products */ = {
+		6B211663DCEEBAED89B50D8384CA363D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0F47FB5E28EE8C8342B1776D813D1A4C /* libFSPagerView.a */,
-				507EC4D3AD4836D6989496A12FD76F3E /* libPods-Horoscope.a */,
+				A16F96B0AC7854B58C2FED4477953908 /* Google-Mobile-Ads-SDK */,
 			);
-			name = Products;
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		4862047F76A1800D7CC809233C1079D3 /* Google-Mobile-Ads-SDK */ = {
+		9DF779CD18548813AFFB3EA32A0CB28B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				26303253CC4A954FFB3D2D3946FEB0AA /* Frameworks */,
-				91751A9DB1511736B806249E931BB793 /* Support Files */,
+				EF69CE5CF9FE834C180825C81B83A848 /* GoogleMobileAds.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A16F96B0AC7854B58C2FED4477953908 /* Google-Mobile-Ads-SDK */ = {
+			isa = PBXGroup;
+			children = (
+				9DF779CD18548813AFFB3EA32A0CB28B /* Frameworks */,
+				C46B19AAE614FD62C8A1C6C9D34EA1F2 /* Support Files */,
 			);
 			name = "Google-Mobile-Ads-SDK";
 			path = "Google-Mobile-Ads-SDK";
 			sourceTree = "<group>";
 		};
-		8589E335013F0E26A0BCF8D61172A335 /* Support Files */ = {
+		A2A47DEB297628690E5C1845D00C7E63 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1CA0BAB36574A4E1BE31EDBC0B9387E7 /* FSPagerView.modulemap */,
-				03F1904D05C62F7CBDFB2BB4D7C92C2E /* FSPagerView.xcconfig */,
-				FAE0C6126B16F3B80ADC0485F1208748 /* FSPagerView-dummy.m */,
-				7590A90F3070733D69347BF169E165A6 /* FSPagerView-prefix.pch */,
-				165C2A12FEB00554250181E0CA95E4B9 /* FSPagerView-umbrella.h */,
+				507EC4D3AD4836D6989496A12FD76F3E /* libPods-Horoscope.a */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/FSPagerView";
+			name = Products;
 			sourceTree = "<group>";
 		};
-		91751A9DB1511736B806249E931BB793 /* Support Files */ = {
+		AD97F20EFA5704CAF6A05A2A1A17F1C6 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				24D9BE27F62FD5E799D106CF70A9322C /* Google-Mobile-Ads-SDK.xcconfig */,
+				1157650B3C5CE7362E52422AE94FB4E1 /* Pods-Horoscope */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C46B19AAE614FD62C8A1C6C9D34EA1F2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				161DACB3951544C43142E6FC540DCDB2 /* Google-Mobile-Ads-SDK.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Google-Mobile-Ads-SDK";
-			sourceTree = "<group>";
-		};
-		9B471C266F8B86EB7AB6FFD3834AC75E /* FSPagerView */ = {
-			isa = PBXGroup;
-			children = (
-				68AFE09628454555D7421F05D7D376C5 /* FSPageControl.swift */,
-				D001B1F7622C113AA76277799234BABF /* FSPagerCollectionView.swift */,
-				1B237834339E1764F726CBCDAEC0C9CD /* FSPagerView.swift */,
-				5E39BD7A053C56CFD39CC37D4B08FD84 /* FSPagerViewCell.swift */,
-				40B7BD91FC92D549EB35D072967CAA5C /* FSPagerViewLayoutAttributes.swift */,
-				C9786291BC3E44F77B54534D0EB365B3 /* FSPagerViewObjcCompat.h */,
-				A6BE4798A33BF4F9E2F46F63EE301AEF /* FSPagerViewObjcCompat.m */,
-				9548035DDDB44A11B2F34FD227E7E4EC /* FSPageViewLayout.swift */,
-				C201046942D9E44D2F435DCD6D2533E5 /* FSPageViewTransformer.swift */,
-				8589E335013F0E26A0BCF8D61172A335 /* Support Files */,
-			);
-			name = FSPagerView;
-			path = FSPagerView;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -185,9 +124,9 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
-				DF4DC8E855A9D726ED668DD7807A8385 /* Pods */,
-				343F0C4B998A4AD5A5AB83043994F11F /* Products */,
-				DA0164888ED08FCD8FE8890541CF54F8 /* Targets Support Files */,
+				6B211663DCEEBAED89B50D8384CA363D /* Pods */,
+				A2A47DEB297628690E5C1845D00C7E63 /* Products */,
+				AD97F20EFA5704CAF6A05A2A1A17F1C6 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -198,40 +137,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DA0164888ED08FCD8FE8890541CF54F8 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				2D6FB58B51936297AF304C1CD36EDEF5 /* Pods-Horoscope */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		DF4DC8E855A9D726ED668DD7807A8385 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				9B471C266F8B86EB7AB6FFD3834AC75E /* FSPagerView */,
-				4862047F76A1800D7CC809233C1079D3 /* Google-Mobile-Ads-SDK */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		C538EDCFBDABDB37DAB272519C23E19C /* Headers */ = {
+		10133447FB12466010F04074ED60A7C4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18B92CA600AC679D3C9A2257066FCC27 /* FSPagerView-umbrella.h in Headers */,
-				F2BB46EC8E8A873D86D997C918152D82 /* FSPagerViewObjcCompat.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D7F2F18B7D637AE4F427F20A00426D5D /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2D182530CD6BB5E5DFA2A5DBD56A373D /* Pods-Horoscope-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,39 +152,20 @@
 /* Begin PBXNativeTarget section */
 		50C09ACD773AF4A5CF4E1B969468F3FD /* Pods-Horoscope */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FF48974414298F2C2DC33B79ACBFC10B /* Build configuration list for PBXNativeTarget "Pods-Horoscope" */;
+			buildConfigurationList = F0CD2D90230722CC861982BFD13E694C /* Build configuration list for PBXNativeTarget "Pods-Horoscope" */;
 			buildPhases = (
-				D7F2F18B7D637AE4F427F20A00426D5D /* Headers */,
-				FF86ED1CC975F28A5444C5C87571ABC8 /* Sources */,
-				629433005F0B7FE5D052B3AC87F56356 /* Frameworks */,
+				10133447FB12466010F04074ED60A7C4 /* Headers */,
+				CC92E13F08C8BC4969D05B1305198D93 /* Sources */,
+				BD9472BBAD6A937F77E9FFCDD9A5ABAF /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				19CB84ECCB46B2B7D75B2DC51821835F /* PBXTargetDependency */,
-				0A511322F91529291295D6472E7CE965 /* PBXTargetDependency */,
+				B2BB3F633D5CB821193C01703D0441C5 /* PBXTargetDependency */,
 			);
 			name = "Pods-Horoscope";
 			productName = "Pods-Horoscope";
 			productReference = 507EC4D3AD4836D6989496A12FD76F3E /* libPods-Horoscope.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		D4F8239FB329387A8476B964D92D92E7 /* FSPagerView */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F04FC1CD3E43257062ACA57E4F52D028 /* Build configuration list for PBXNativeTarget "FSPagerView" */;
-			buildPhases = (
-				C538EDCFBDABDB37DAB272519C23E19C /* Headers */,
-				4E1168AAC6C3C58F8F0F12D3BE15ACD6 /* Sources */,
-				4322F7B180C457417A41FA8C03A72393 /* Frameworks */,
-				94B82AF9B1E107F21DEF503F7EF1FFF2 /* Copy generated compatibility header */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = FSPagerView;
-			productName = FSPagerView;
-			productReference = 0F47FB5E28EE8C8342B1776D813D1A4C /* libFSPagerView.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -292,90 +185,61 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 343F0C4B998A4AD5A5AB83043994F11F /* Products */;
+			productRefGroup = A2A47DEB297628690E5C1845D00C7E63 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D4F8239FB329387A8476B964D92D92E7 /* FSPagerView */,
 				FEA3B3A570634836C0457F3D7CEF1699 /* Google-Mobile-Ads-SDK */,
 				50C09ACD773AF4A5CF4E1B969468F3FD /* Pods-Horoscope */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		94B82AF9B1E107F21DEF503F7EF1FFF2 /* Copy generated compatibility header */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
-				"${PODS_ROOT}/Headers/Public/FSPagerView/FSPagerView.modulemap",
-				"${PODS_ROOT}/Headers/Public/FSPagerView/FSPagerView-umbrella.h",
-			);
-			name = "Copy generated compatibility header";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
-				"${BUILT_PRODUCTS_DIR}/FSPagerView-umbrella.h",
-				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/FSPagerView/FSPagerView.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/FSPagerView/FSPagerView-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		4E1168AAC6C3C58F8F0F12D3BE15ACD6 /* Sources */ = {
+		CC92E13F08C8BC4969D05B1305198D93 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9BD40685399DF26D5807DB4DD711958 /* FSPageControl.swift in Sources */,
-				8032277151AD5BB27F311020CF8BC829 /* FSPagerCollectionView.swift in Sources */,
-				E06EE07DBBF7F4835106D5017B7EE1BD /* FSPagerView-dummy.m in Sources */,
-				02BCE08210AF03682205EC28C0779AD4 /* FSPagerView.swift in Sources */,
-				FF1340C71721360AA75EA57CF25998D5 /* FSPagerViewCell.swift in Sources */,
-				7526B6A1B8C2F46F52E3A75149B56D83 /* FSPagerViewLayoutAttributes.swift in Sources */,
-				22A5799B211F8AD4CCFCF4655840BE5E /* FSPagerViewObjcCompat.m in Sources */,
-				9671ABE88CC9131A7D713B4EF038C68A /* FSPageViewLayout.swift in Sources */,
-				F342C8746DDFFA018288843A63E0913A /* FSPageViewTransformer.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FF86ED1CC975F28A5444C5C87571ABC8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7E510F9A49F37C020D6B208E7E801637 /* Pods-Horoscope-dummy.m in Sources */,
+				939B499488589F33F32A9E00FCA039B2 /* Pods-Horoscope-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0A511322F91529291295D6472E7CE965 /* PBXTargetDependency */ = {
+		B2BB3F633D5CB821193C01703D0441C5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Google-Mobile-Ads-SDK";
 			target = FEA3B3A570634836C0457F3D7CEF1699 /* Google-Mobile-Ads-SDK */;
-			targetProxy = D071319D5903190C4A8DCA049BC5D505 /* PBXContainerItemProxy */;
-		};
-		19CB84ECCB46B2B7D75B2DC51821835F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = FSPagerView;
-			target = D4F8239FB329387A8476B964D92D92E7 /* FSPagerView */;
-			targetProxy = 6258DE7BC74A166960CA3FE9B35DC066 /* PBXContainerItemProxy */;
+			targetProxy = F81C030E5CA7AEC12861ABAD3F15018F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		1D10114CCB7BA896020E7D7B66FB770C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 505A7B0FEEF91087F2685FEB2E7C3ECF /* Pods-Horoscope.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 		299935F7B7F0D3E1C03CA4656631A204 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 24D9BE27F62FD5E799D106CF70A9322C /* Google-Mobile-Ads-SDK.xcconfig */;
+			baseConfigurationReference = 161DACB3951544C43142E6FC540DCDB2 /* Google-Mobile-Ads-SDK.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -387,7 +251,7 @@
 			};
 			name = Release;
 		};
-		4BE66A09A74FD25164AAB3C2645B9B93 /* Release */ = {
+		8F17DC3A99F99FBAD606CE6963886315 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -435,7 +299,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -447,56 +311,7 @@
 			};
 			name = Release;
 		};
-		698FE011A7B35EE45A95E208DDAFAA68 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 03F1904D05C62F7CBDFB2BB4D7C92C2E /* FSPagerView.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/FSPagerView/FSPagerView-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MODULEMAP_FILE = Headers/Public/FSPagerView/FSPagerView.modulemap;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = FSPagerView;
-				PRODUCT_NAME = FSPagerView;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		70458595EB13C75BB51F20CFD86ACA2C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8AF2E258F32B3E24D1AC2BE56A3F06EB /* Pods-Horoscope.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Horoscope/Pods-Horoscope.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		7EF7227D9B20A1D549000096ACCB23D7 /* Debug */ = {
+		916E0404255105F480DC4950B7625F7A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -547,7 +362,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -560,18 +375,17 @@
 			};
 			name = Debug;
 		};
-		AE3FF356737AE13C9E111CCFD4FC612E /* Debug */ = {
+		93535E3B25868C98A0656C56689EB730 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1C8336A3BD5AA8670C3562B0A006D7F8 /* Pods-Horoscope.debug.xcconfig */;
+			baseConfigurationReference = 0A0726D85AB2FAECA094464EC7FB536B /* Pods-Horoscope.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Horoscope/Pods-Horoscope.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -579,37 +393,13 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
-			name = Debug;
-		};
-		BA73F48C8F923CE99936AE530C6A908E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 03F1904D05C62F7CBDFB2BB4D7C92C2E /* FSPagerView.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/FSPagerView/FSPagerView-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MODULEMAP_FILE = Headers/Public/FSPagerView/FSPagerView.modulemap;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = FSPagerView;
-				PRODUCT_NAME = FSPagerView;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
+			name = Release;
 		};
 		F42B6691B10FDBA0653EE44ADC03B585 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 24D9BE27F62FD5E799D106CF70A9322C /* Google-Mobile-Ads-SDK.xcconfig */;
+			baseConfigurationReference = 161DACB3951544C43142E6FC540DCDB2 /* Google-Mobile-Ads-SDK.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -626,17 +416,17 @@
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7EF7227D9B20A1D549000096ACCB23D7 /* Debug */,
-				4BE66A09A74FD25164AAB3C2645B9B93 /* Release */,
+				916E0404255105F480DC4950B7625F7A /* Debug */,
+				8F17DC3A99F99FBAD606CE6963886315 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F04FC1CD3E43257062ACA57E4F52D028 /* Build configuration list for PBXNativeTarget "FSPagerView" */ = {
+		F0CD2D90230722CC861982BFD13E694C /* Build configuration list for PBXNativeTarget "Pods-Horoscope" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BA73F48C8F923CE99936AE530C6A908E /* Debug */,
-				698FE011A7B35EE45A95E208DDAFAA68 /* Release */,
+				1D10114CCB7BA896020E7D7B66FB770C /* Debug */,
+				93535E3B25868C98A0656C56689EB730 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -646,15 +436,6 @@
 			buildConfigurations = (
 				F42B6691B10FDBA0653EE44ADC03B585 /* Debug */,
 				299935F7B7F0D3E1C03CA4656631A204 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FF48974414298F2C2DC33B79ACBFC10B /* Build configuration list for PBXNativeTarget "Pods-Horoscope" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AE3FF356737AE13C9E111CCFD4FC612E /* Debug */,
-				70458595EB13C75BB51F20CFD86ACA2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

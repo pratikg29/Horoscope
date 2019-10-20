@@ -8,5 +8,4 @@ target 'Horoscope' do
   # Pods for Horoscope
 
 pod 'Google-Mobile-Ads-SDK'
-pod 'FSPagerView'
 end

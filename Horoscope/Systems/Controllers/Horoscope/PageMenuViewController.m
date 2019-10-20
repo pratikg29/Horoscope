@@ -33,9 +33,7 @@
 }
 
 - (void)viewWillAppear:(BOOL)animated {
-    [self rotatingAnimation:_img1 duration:40 from:[NSNumber numberWithFloat:0.0f] to:[NSNumber numberWithFloat: 2*M_PI]];
-    [self rotatingAnimation:_img2 duration:70 from:[NSNumber numberWithFloat: 2*M_PI] to:[NSNumber numberWithFloat:0.0f]];
-    [self rotatingAnimation:_img3 duration:60 from:[NSNumber numberWithFloat:0.0f] to:[NSNumber numberWithFloat: 2*M_PI]];
+
 }
 
 
@@ -48,14 +46,6 @@
     [self initWithAds];
 }
 
-- (void)rotatingAnimation: (UIImageView *)image duration: (float)duration from: (NSNumber*)From to: (NSNumber*)To {
-    CABasicAnimation* animation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
-    animation.fromValue = From;
-    animation.toValue = To;
-    animation.duration = duration;
-    animation.repeatCount = INFINITY;
-    [image.layer addAnimation:animation forKey:@"SpinAnimation"];
-}
 
 -(void)initWithAds
 {

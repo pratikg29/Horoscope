@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		300F2EAA232584DE002E883C /* PagerViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 300F2EA9232584DE002E883C /* PagerViewCell.m */; };
 		303793E2232A302300759CFD /* cancer.png in Resources */ = {isa = PBXBuildFile; fileRef = 303793D6232A302000759CFD /* cancer.png */; };
 		303793E3232A302300759CFD /* aquarius.png in Resources */ = {isa = PBXBuildFile; fileRef = 303793D7232A302000759CFD /* aquarius.png */; };
 		303793E4232A302300759CFD /* aries.png in Resources */ = {isa = PBXBuildFile; fileRef = 303793D8232A302000759CFD /* aries.png */; };
@@ -22,14 +21,6 @@
 		303793ED232A302300759CFD /* scorpio.png in Resources */ = {isa = PBXBuildFile; fileRef = 303793E1232A302300759CFD /* scorpio.png */; };
 		303793EF232A3DA800759CFD /* 1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 303793EE232A3DA800759CFD /* 1024.png */; };
 		3038D42423129599004AF5E7 /* hello.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3038D42323129599004AF5E7 /* hello.swift */; };
-		3038D43223129D77004AF5E7 /* FSPagerViewLayoutAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3038D42A23129D76004AF5E7 /* FSPagerViewLayoutAttributes.swift */; };
-		3038D43323129D77004AF5E7 /* FSPagerCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3038D42B23129D76004AF5E7 /* FSPagerCollectionView.swift */; };
-		3038D43423129D77004AF5E7 /* FSPageViewTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3038D42C23129D76004AF5E7 /* FSPageViewTransformer.swift */; };
-		3038D43523129D77004AF5E7 /* FSPagerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3038D42D23129D76004AF5E7 /* FSPagerViewCell.swift */; };
-		3038D43623129D77004AF5E7 /* FSPagerViewObjcCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = 3038D42E23129D76004AF5E7 /* FSPagerViewObjcCompat.m */; };
-		3038D43723129D77004AF5E7 /* FSPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3038D42F23129D76004AF5E7 /* FSPageControl.swift */; };
-		3038D43823129D77004AF5E7 /* FSPageViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3038D43023129D76004AF5E7 /* FSPageViewLayout.swift */; };
-		3038D43923129D77004AF5E7 /* FSPagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3038D43123129D76004AF5E7 /* FSPagerView.swift */; };
 		303E8B20232941B700114058 /* MoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 303E8B1F232941B600114058 /* MoreViewController.m */; };
 		30F382C423250BA700A983B6 /* HoroscopeSelectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 30F382C323250BA700A983B6 /* HoroscopeSelectionCell.m */; };
 		4D106D7821535F7C0097823D /* TextViewCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D106D7621535F7C0097823D /* TextViewCollectionViewCell.m */; };
@@ -273,8 +264,6 @@
 
 /* Begin PBXFileReference section */
 		2A110858C608B4E226A54F5B /* Pods-Horoscope.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Horoscope.release.xcconfig"; path = "Pods/Target Support Files/Pods-Horoscope/Pods-Horoscope.release.xcconfig"; sourceTree = "<group>"; };
-		300F2EA8232584DE002E883C /* PagerViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PagerViewCell.h; sourceTree = "<group>"; };
-		300F2EA9232584DE002E883C /* PagerViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PagerViewCell.m; sourceTree = "<group>"; };
 		303793D6232A302000759CFD /* cancer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cancer.png; sourceTree = "<group>"; };
 		303793D7232A302000759CFD /* aquarius.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aquarius.png; sourceTree = "<group>"; };
 		303793D8232A302000759CFD /* aries.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aries.png; sourceTree = "<group>"; };
@@ -290,15 +279,6 @@
 		303793EE232A3DA800759CFD /* 1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1024.png; sourceTree = "<group>"; };
 		3038D42223129598004AF5E7 /* Horoscope-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Horoscope-Bridging-Header.h"; sourceTree = "<group>"; };
 		3038D42323129599004AF5E7 /* hello.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hello.swift; sourceTree = "<group>"; };
-		3038D42923129D76004AF5E7 /* FSPagerViewObjcCompat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSPagerViewObjcCompat.h; sourceTree = "<group>"; };
-		3038D42A23129D76004AF5E7 /* FSPagerViewLayoutAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSPagerViewLayoutAttributes.swift; sourceTree = "<group>"; };
-		3038D42B23129D76004AF5E7 /* FSPagerCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSPagerCollectionView.swift; sourceTree = "<group>"; };
-		3038D42C23129D76004AF5E7 /* FSPageViewTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSPageViewTransformer.swift; sourceTree = "<group>"; };
-		3038D42D23129D76004AF5E7 /* FSPagerViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSPagerViewCell.swift; sourceTree = "<group>"; };
-		3038D42E23129D76004AF5E7 /* FSPagerViewObjcCompat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSPagerViewObjcCompat.m; sourceTree = "<group>"; };
-		3038D42F23129D76004AF5E7 /* FSPageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSPageControl.swift; sourceTree = "<group>"; };
-		3038D43023129D76004AF5E7 /* FSPageViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSPageViewLayout.swift; sourceTree = "<group>"; };
-		3038D43123129D76004AF5E7 /* FSPagerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSPagerView.swift; sourceTree = "<group>"; };
 		303E8B1E232941B600114058 /* MoreViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoreViewController.h; sourceTree = "<group>"; };
 		303E8B1F232941B600114058 /* MoreViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoreViewController.m; sourceTree = "<group>"; };
 		3056392923183131004E6A6E /* tempJson.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = tempJson.geojson; sourceTree = "<group>"; };
@@ -764,22 +744,6 @@
 			path = Images;
 			sourceTree = "<group>";
 		};
-		3038D42823129D5B004AF5E7 /* Pager Source */ = {
-			isa = PBXGroup;
-			children = (
-				3038D42F23129D76004AF5E7 /* FSPageControl.swift */,
-				3038D42B23129D76004AF5E7 /* FSPagerCollectionView.swift */,
-				3038D43123129D76004AF5E7 /* FSPagerView.swift */,
-				3038D42D23129D76004AF5E7 /* FSPagerViewCell.swift */,
-				3038D42A23129D76004AF5E7 /* FSPagerViewLayoutAttributes.swift */,
-				3038D42923129D76004AF5E7 /* FSPagerViewObjcCompat.h */,
-				3038D42E23129D76004AF5E7 /* FSPagerViewObjcCompat.m */,
-				3038D43023129D76004AF5E7 /* FSPageViewLayout.swift */,
-				3038D42C23129D76004AF5E7 /* FSPageViewTransformer.swift */,
-			);
-			path = "Pager Source";
-			sourceTree = "<group>";
-		};
 		4AFB8767187B570F65CFD792 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -836,7 +800,6 @@
 			isa = PBXGroup;
 			children = (
 				303793D5232A301400759CFD /* Images */,
-				3038D42823129D5B004AF5E7 /* Pager Source */,
 				4DED80AC21523747000C6319 /* Cell */,
 				4DED7DD621522A9B000C6319 /* AssetsData */,
 				4DED7E1021522A9B000C6319 /* CustomControls */,
@@ -1788,8 +1751,6 @@
 				4DED80AE21523758000C6319 /* MainCollectionViewCell.m */,
 				4DED80AF21523758000C6319 /* MainCollectionViewCell.xib */,
 				4D106D80215396DA0097823D /* MainCollectionViewCelliPad.xib */,
-				300F2EA8232584DE002E883C /* PagerViewCell.h */,
-				300F2EA9232584DE002E883C /* PagerViewCell.m */,
 			);
 			path = MainCell;
 			sourceTree = "<group>";
@@ -2004,7 +1965,6 @@
 				4DED807021522A9B000C6319 /* NSCalendarHelper.m in Sources */,
 				4DED804D21522A9B000C6319 /* AutoResizeTextView.m in Sources */,
 				4DED80C821523BF4000C6319 /* WeeklyViewController.m in Sources */,
-				3038D43523129D77004AF5E7 /* FSPagerViewCell.swift in Sources */,
 				4DED806E21522A9B000C6319 /* MDToast.m in Sources */,
 				4DED805321522A9B000C6319 /* MDCalendarDateHeader.m in Sources */,
 				4F97DF012158B3E00060E1F2 /* SingleViewViewController.m in Sources */,
@@ -2036,7 +1996,6 @@
 				4DED80A921522A9B000C6319 /* TSMessageView.m in Sources */,
 				4F2E3A81215538220026E12E /* CoverView.m in Sources */,
 				4DED804F21522A9B000C6319 /* MDBubbleLabel.m in Sources */,
-				3038D43223129D77004AF5E7 /* FSPagerViewLayoutAttributes.swift in Sources */,
 				4DED803A21522A9B000C6319 /* IQNSArray+Sort.m in Sources */,
 				4DED801B21522A9B000C6319 /* NSString+DNSStringLocalised.m in Sources */,
 				4DED804821522A9B000C6319 /* LGPlusButton.m in Sources */,
@@ -2057,7 +2016,6 @@
 				4DED807C21522A9B000C6319 /* EPTextField.m in Sources */,
 				4DED802621522A9B000C6319 /* AFNetworkReachabilityManager.m in Sources */,
 				4DED800521522A9B000C6319 /* LocalisedStrings.m in Sources */,
-				3038D43923129D77004AF5E7 /* FSPagerView.swift in Sources */,
 				4DED80AA21522A9B000C6319 /* UILabel+UILabelDynamicHeight.m in Sources */,
 				4DED806721522A9B000C6319 /* MDSuggestTableView.m in Sources */,
 				4DED805821522A9B000C6319 /* MDCollectionViewCell.m in Sources */,
@@ -2074,18 +2032,14 @@
 				4DED807621522A9B000C6319 /* UIViewHelper.m in Sources */,
 				4DED807521522A9B000C6319 /* UIView+MDExtension.m in Sources */,
 				4DED806521522A9B000C6319 /* MDSnackbar.m in Sources */,
-				3038D43723129D77004AF5E7 /* FSPageControl.swift in Sources */,
-				300F2EAA232584DE002E883C /* PagerViewCell.m in Sources */,
 				4DED803F21522A9B000C6319 /* IQSegmentedNextPrevious.m in Sources */,
 				4DED804721522A9B000C6319 /* KLCPopup.m in Sources */,
 				4DED80A721522A9B000C6319 /* TSMessage.m in Sources */,
 				4DED804221522A9B000C6319 /* IQTitleBarButtonItem.m in Sources */,
 				4F2E3A83215538220026E12E /* SideView.m in Sources */,
-				3038D43323129D77004AF5E7 /* FSPagerCollectionView.swift in Sources */,
 				4DED803421522A9B000C6319 /* NSString+Base64.m in Sources */,
 				4DED803921522A9B000C6319 /* IQActionSheetViewController.m in Sources */,
 				4DED7FFB21522A9B000C6319 /* CSCell.m in Sources */,
-				3038D43423129D77004AF5E7 /* FSPageViewTransformer.swift in Sources */,
 				4DED808A21522A9B000C6319 /* UIImage+GIF.m in Sources */,
 				4DED802321522A9B000C6319 /* AFHTTPRequestOperation.m in Sources */,
 				4DED805F21522A9B000C6319 /* MDProgressLayer.m in Sources */,
@@ -2111,7 +2065,6 @@
 				4DED803221522A9B000C6319 /* IAPHelper.m in Sources */,
 				4DED803D21522A9B000C6319 /* IQKeyboardManager.m in Sources */,
 				4DED801621522A9B000C6319 /* THLabel+DTHLabel.m in Sources */,
-				3038D43623129D77004AF5E7 /* FSPagerViewObjcCompat.m in Sources */,
 				4DED807121522A9B000C6319 /* NSDate+MDExtension.m in Sources */,
 				4DED800A21522A9B000C6319 /* UIImage+animatedGIF.m in Sources */,
 				4DED804B21522A9B000C6319 /* LGPlusButtonsViewShared.m in Sources */,
@@ -2134,7 +2087,6 @@
 				4DED808121522A9B000C6319 /* NSData+ImageContentType.m in Sources */,
 				4DED806B21522A9B000C6319 /* MDTableViewCell.m in Sources */,
 				4DED800821522A9B000C6319 /* WebClient.m in Sources */,
-				3038D43823129D77004AF5E7 /* FSPageViewLayout.swift in Sources */,
 				4DED7DCE21522A1F000C6319 /* main.m in Sources */,
 				4DED805921522A9B000C6319 /* MDDatePicker.m in Sources */,
 				4DED80B021523758000C6319 /* MainCollectionViewCell.m in Sources */,

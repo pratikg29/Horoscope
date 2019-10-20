@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -18,7 +16,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xch-VL-b5F">
+                    <visualEffectView hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xch-VL-b5F">
                         <rect key="frame" x="20" y="8" width="60" height="56"/>
                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="cjf-Cu-y9m">
                             <rect key="frame" x="0.0" y="0.0" width="60" height="56"/>
@@ -27,21 +25,9 @@
                                 <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jZa-Q4-DIT">
                                     <rect key="frame" x="0.0" y="0.0" width="60" height="56"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ufg-iW-3UX">
+                                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="ufg-iW-3UX">
                                         <rect key="frame" x="0.0" y="0.0" width="60" height="56"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                        <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_aries" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RoB-lM-XIu">
-                                                <rect key="frame" x="5" y="5" width="128" height="128"/>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                            </imageView>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="RoB-lM-XIu" secondAttribute="trailing" constant="5" id="2DO-iv-wcE"/>
-                                            <constraint firstItem="RoB-lM-XIu" firstAttribute="leading" secondItem="ufg-iW-3UX" secondAttribute="leading" constant="5" id="Ag7-jb-j19"/>
-                                            <constraint firstAttribute="bottom" secondItem="RoB-lM-XIu" secondAttribute="bottom" constant="5" id="bwA-oj-7Y5"/>
-                                            <constraint firstItem="RoB-lM-XIu" firstAttribute="top" secondItem="ufg-iW-3UX" secondAttribute="top" constant="5" id="eYN-jD-RI6"/>
-                                        </constraints>
                                     </view>
                                     <vibrancyEffect>
                                         <blurEffect style="extraLight"/>
@@ -49,8 +35,14 @@
                                 </visualEffectView>
                             </subviews>
                         </view>
-                        <blurEffect style="extraLight"/>
+                        <vibrancyEffect>
+                            <blurEffect style="extraLight"/>
+                        </vibrancyEffect>
                     </visualEffectView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_aries" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RoB-lM-XIu">
+                        <rect key="frame" x="20" y="8" width="60" height="56"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </imageView>
                     <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kTr-Ts-Yfa">
                         <rect key="frame" x="20" y="69" width="60" height="21"/>
                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="z34-uG-GSL">
@@ -95,11 +87,15 @@
             <constraints>
                 <constraint firstItem="kTr-Ts-Yfa" firstAttribute="top" secondItem="xch-VL-b5F" secondAttribute="bottom" constant="5" id="3SF-pr-2QW"/>
                 <constraint firstItem="kTr-Ts-Yfa" firstAttribute="width" secondItem="xch-VL-b5F" secondAttribute="width" id="FJm-ks-Odl"/>
+                <constraint firstItem="RoB-lM-XIu" firstAttribute="height" secondItem="xch-VL-b5F" secondAttribute="height" id="OAR-Am-dEe"/>
+                <constraint firstItem="RoB-lM-XIu" firstAttribute="centerY" secondItem="xch-VL-b5F" secondAttribute="centerY" id="RtV-cT-gfY"/>
+                <constraint firstItem="RoB-lM-XIu" firstAttribute="centerX" secondItem="xch-VL-b5F" secondAttribute="centerX" id="Ugw-ZT-ia2"/>
                 <constraint firstItem="xch-VL-b5F" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="ZVa-nq-YAJ"/>
                 <constraint firstItem="kTr-Ts-Yfa" firstAttribute="centerX" secondItem="xch-VL-b5F" secondAttribute="centerX" id="efe-dp-Cou"/>
                 <constraint firstAttribute="bottom" secondItem="kTr-Ts-Yfa" secondAttribute="bottom" constant="10" id="gSz-Tx-00F"/>
                 <constraint firstItem="xch-VL-b5F" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="hX9-La-g6v"/>
                 <constraint firstAttribute="trailing" secondItem="xch-VL-b5F" secondAttribute="trailing" constant="20" id="kBc-ue-F94"/>
+                <constraint firstItem="RoB-lM-XIu" firstAttribute="width" secondItem="xch-VL-b5F" secondAttribute="width" id="poe-hd-Vev"/>
             </constraints>
             <connections>
                 <outlet property="blurLabelView" destination="kTr-Ts-Yfa" id="J4G-RC-OQp"/>
